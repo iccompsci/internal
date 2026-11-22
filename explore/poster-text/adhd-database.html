@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Text companion for the student poster Database for an ADHD Game Research System">
+<title>Database for an ADHD Game Research System | Poster Text | ICCS</title>
+<link rel="stylesheet" href="../../assets/style.css"><link rel="stylesheet" href="../../assets/content.css"><link rel="stylesheet" href="../../assets/accessibility.css">
+<style>.poster-transcript{max-width:850px;margin:35px auto 80px;padding:0 22px}.poster-transcript h1{font:500 clamp(36px,5vw,54px)/1.15 var(--serif)}.poster-transcript p{max-width:800px;color:#526965;line-height:1.75}.transcript-note{background:#e8f0e9;border-left:4px solid #19564f;padding:16px 20px}.transcript-body{border-top:1px solid #cbdad3;padding-top:20px}.transcript-body p{margin:0 0 1.15em}</style>
+<link rel="stylesheet" href="../../assets/times-sitewide.css">
+</head><body><a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="wrap"><a class="logo" href="../../index.html">ICCS <span>/ Ithaca College · Computer Science Department</span></a><nav class="nav" aria-label="Main navigation"><a href="../../index.html#majors">Majors</a><a href="../../index.html#minors">Minors</a><a href="../student-work.html">Student Work</a></nav></div></header>
+<main id="main-content" tabindex="-1" class="poster-transcript"><p><a href="../student-work.html">← Student Work</a></p><h1>Database for an ADHD Game Research System</h1>
+<p>Database architecture supporting a research system built around cognitive games.</p><p><a href="../../assets/posters/adhd-database.pdf" target="_blank" rel="noopener">Open original poster PDF ↗</a></p>
+<div class="transcript-note"><strong>About this text version:</strong> Extracted from the original PDF. This draft transcription makes poster text available without viewing the graphic, but column reading order, figures, tables, and OCR accuracy still require a human accessibility review.</div>
+<section aria-labelledby="poster-transcript-heading"><h2 id="poster-transcript-heading">Poster text</h2><div class="transcript-body"><p>wcstprogress</p>
+<p>trainingefs</p>
+<p>stopgoprogress</p>
+<p>fi</p>
+<p>e d</p>
+<p>mgid</p>
+<p>sessioncount</p>
+<p>parid</p>
+<p>minigames</p>
+<p>currentlevel</p>
+<p>completedo evel</p>
+<p>updated</p>
+<p>fl</p>
+<p>id</p>
+<p>name</p>
+<p>executivefunctions</p>
+<p>currentlevel</p>
+<p>completedoflevel</p>
+<p>updated</p>
+<p>cbttprogress</p>
+<p>sessioncount</p>
+<p>parid</p>
+<p>q</p>
+<p>se uencetypes</p>
+<p>name</p>
+<p>trialnum</p>
+<p>sessionnum</p>
+<p>parid</p>
+<p>id</p>
+<p>stid</p>
+<p>sequencelength</p>
+<p>score</p>
+<p>whencompleted</p>
+<p>name</p>
+<p>wcsttrials</p>
+<p>trialnum</p>
+<p>parid</p>
+<p>sessionnum</p>
+<p>rnum</p>
+<p>trialcardid</p>
+<p>ifsuccessful</p>
+<p>RT</p>
+<p>whencompleted</p>
+<p>wcstruleblocks</p>
+<p>currentlevel</p>
+<p>completedoflevel</p>
+<p>updated</p>
+<p>Training Executive functions</p>
+<p>rid</p>
+<p>phase</p>
+<p>blocklength</p>
+<p>adaptionrate</p>
+<p>wcsttrialcards</p>
+<p>id</p>
+<p>feature1</p>
+<p>feature2</p>
+<p>feature3</p>
+<p>wcstruletypes</p>
+<p>id</p>
+<p>name</p>
+<p>cbttsessions</p>
+<p>sessionnum</p>
+<p>parid</p>
+<p>sessionlength</p>
+<p>correctcount</p>
+<p>longestsequence</p>
+<p>currentlevel</p>
+<p>whencompleted</p>
+<p>sgttid</p>
+<p>startinterval</p>
+<p>goRT</p>
+<p>stopRT</p>
+<p>ifsuccessful</p>
+<p>stopsignaldelaytime</p>
+<p>direction</p>
+<p>whencompleted</p>
+<p>professional</p>
+<p>id</p>
+<p>name</p>
+<p>clinic</p>
+<p>phonenumber</p>
+<p>parid</p>
+<p>proid</p>
+<p>implified Views</p>
+<p>U</p>
+<p>ipt</p>
+<p>wcstsessions</p>
+<p>data normali ation</p>
+<p>stopgotrialtypes</p>
+<p>id</p>
+<p>name</p>
+<p>pdating the Database</p>
+<p>J</p>
+<p>participants</p>
+<p>9:42 PM</p>
+<p>F</p>
+<p>C</p>
+<p>F</p>
+<p>name</p>
+<p>address</p>
+<p>age</p>
+<p>diagnosis</p>
+<p>1</p>
+<p>attributes are dependent on the entire composite primary key</p>
+<p>2N</p>
+<p>F</p>
+<p>Has this participant improved in regards to a particular executive function training mini-game How have they improved over all mini-games that train inhibition</p>
+<p>Logical relationships</p>
+<p>Examples</p>
+<p>?</p>
+<p>ver all participants, whatmiisni-the best score in the Stop o game How did this participant perform in yesterday’s session</p>
+<p>O</p>
+<p>G</p>
+<p>no transitive dependency exists between non-key attributes</p>
+<p>3N</p>
+<p>participants -&gt; professionals (protopatient) participants -&gt; executivefunctions (patienteffocus minigames -&gt; executivefunctions (trainingefs)</p>
+<p>urrent Possible Queries Examples</p>
+<p>y</p>
+<p>id</p>
+<p>One-to-One</p>
+<p>participants -&gt; stopgoprogres wcstsessions -&gt; wcsttrialcards</p>
+<p>?</p>
+<p>12/17/2024</p>
+<p>9:38</p>
+<p>A</p>
+<p>M</p>
+<p>One-to-Many</p>
+<p>participants -&gt; cbttsession cbttsessions -&gt; cbtttrial participants -&gt; wcsttrials</p>
+<p>Optimized Structure</p>
+<p>design decisions Separate game-related tables</p>
+<p>(ex: trials &amp; sessions)</p>
+<p>sessionnum</p>
+<p>parid</p>
+<p>sessionlength</p>
+<p>correctcount</p>
+<p>currentlevel</p>
+<p>bestRT</p>
+<p>avgGoRT</p>
+<p>probsignalresponse</p>
+<p>stopsignalRT</p>
+<p>whencompleted</p>
+<p>- Allows for T U constraints for each game’s performance measurements</p>
+<p>- ueries significantly faster as only searching through relevant data NO</p>
+<p>2</p>
+<p>N</p>
+<p>All within a single table w game i (ex trials and sessions table) - inimal overlap between games, leaving many values null</p>
+<p>- unable to use T U constraints</p>
+<p>- ueries search through irrelevant data when focused on one game : 1</p>
+<p>lanning Ahead for Future rowth</p>
+<p>d</p>
+<p>NO</p>
+<p>N</p>
+<p>LL</p>
+<p>Data normalization omposite key trials can be identified by their own number, overall session number, &amp; the participant’s i Separation of game-related data 3N</p>
+<p>C</p>
+<p>y</p>
+<p>3</p>
+<p>G</p>
+<p>I</p>
+<p>- Separate game-related tables rather than having to alter existing, data-filled, tables if a new mini-game is adde - ormalization of data allows for currently known and unforeseen queries d</p>
+<p>N</p>
+<p>1</p>
+<p>M</p>
+<p>Q</p>
+<p>y</p>
+<p>LL</p>
+<p>Q</p>
+<p>/</p>
+<p>scalabilit /flexibilit P</p>
+<p>- While currently in experimentation phase, included real-world use case tables columns to minimize later schema changes /</p>
+<p>QL</p>
+<p>Many-to-Many</p>
+<p>each cell contains one atomic valu each table has a unique primary ke</p>
+<p>1N</p>
+<p>games’ titles and the executive function(s) they train</p>
+<p>QL</p>
+<p>z</p>
+<p>12/3/2024</p>
+<p>Simple view showing mini-</p>
+<p>ON</p>
+<p>M</p>
+<p>QL</p>
+<p>sessionnum</p>
+<p>parid</p>
+<p>Database views allowing for premade, simplified collections of data serving a particular purpose or answering a particular query</p>
+<p>As participants complete sessions within the mini-games, http requests are sent with S -structured data to a Flask server which sends the S insert statement to the yS database</p>
+<p>oogle Sheets UI via Apps Scr</p>
+<p>rovides visualized progress tracking as the user enters a name id and a variety of views populate tables and charts via a S query sent through an Apps Script function</p>
+<p>stopgosessions</p>
+<p>n</p>
+<p>S</p>
+<p>ss the database How users can acveceda out to insert or retrieselvestawwithithits inner concerning them workings</p>
+<p>G</p>
+<p>trialnum</p>
+<p>sessionnum</p>
+<p>parid</p>
+<p>E</p>
+<p>:</p>
+<p>y</p>
+<p>P</p>
+<p>phaselength</p>
+<p>card1</p>
+<p>card2</p>
+<p>card3</p>
+<p>card4</p>
+<p>p1accuracyrate</p>
+<p>p1avgRT</p>
+<p>p1adaptionrate</p>
+<p>p2adaptionrate</p>
+<p>p2avgRT</p>
+<p>p2adaptionrate</p>
+<p>bestRT</p>
+<p>whencompleted</p>
+<p>r</p>
+<p>r</p>
+<p>U</p>
+<p>stopgotrials</p>
+<p>parid</p>
+<p>efid</p>
+<p>protopatient</p>
+<p>se accessibilit</p>
+<p>Database’s Purpose Why the Database is Tracking individuals’ Important</p>
+<p>performance over Able to view time in both training participant’s longeffectiveness and term progress due to futu re ADHD normalized data THE GAME</p>
+<p>trea tment contexts organization that Focuses on training drastically simplifies executive function What It’s the query process for deficits in those with Accomplishing</p>
+<p>a variety of known ADHD where each Saves vital and future queries, cognitive-task based measurements for mini-game focuses each cognitive task reduces data redundancy, and on a particular from indiv idua l trial s minimizes data executive function to overall sessions mod ification errors</p>
+<p>/</p>
+<p>ruleblocknum</p>
+<p>sessionnum</p>
+<p>parid</p>
+<p>Arabella Fielde , Ali rka n o g ra D y b To rs o Advis Science r te u p m o t n e m rt a p e D : C</p>
+<p>cbtttrials</p>
+<p>id</p>
+<p>patienteffocus</p>
+<p>The database</p>
+<p>sessioncount</p>
+<p>parid</p>
+<p>Data integrity &amp;</p>
+<p>constraints</p>
+<p>ndexing</p>
+<p>ommonly searched non-key columns that are indexed drastically reduce query tim ex participants’ ‘name’ C</p>
+<p>5</p>
+<p>:</p>
+<p>4</p>
+<p>quer efficienc y</p>
+<p>y</p>
+<p>ncy, and te is ns co y, c ra cu ac es ur ns nts such reliability througdhDcoFAnsUtrai as T U an constrained with any attributes ’re vital to T U as they king performance trac Foreign key constraints enforce valid relationships between tables &amp; en prevent invalid deletions of a par A participant may have data across all games referenced by its primary key as ‘parid’</p>
+<p>E</p>
+<p>NO</p>
+<p>N</p>
+<p>M</p>
+<p>NO</p>
+<p>N</p>
+<p>LL</p>
+<p>LL</p>
+<p>E</p>
+<p>L</p></div></section>
+</main><footer class="footer"><div class="wrap"><span>Ithaca College · Computer Science Department (ICCS)</span></div></footer><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5e971165914440c',t:'MTc5NTM2NjMxNg=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5e971165914440c',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>

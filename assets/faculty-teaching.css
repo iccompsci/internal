@@ -1,0 +1,42 @@
+.faculty-teaching {
+  width: 100%;
+  max-width: 574px;
+  min-height: 120px;
+  margin: 18px auto 28px;
+}
+.faculty-teaching svg {
+  display: block;
+  width: 100%;
+  max-width: 574px;
+  height: auto;
+  background: transparent;
+}
+.faculty-teaching svg text {
+  font-family: 'Times New Roman', Times, serif !important;
+  font-size: 15px !important;
+  font-weight: 400 !important;
+}
+.faculty-teaching .interactive-course { cursor: pointer; outline: none; }
+.faculty-teaching .interactive-course:hover polygon,
+.faculty-teaching .interactive-course:focus-visible polygon {
+  stroke: #2b6a3e !important;
+  stroke-width: 3.4 !important;
+}
+.faculty-teaching .interactive-course:focus-visible {
+  filter: drop-shadow(0 0 3px #517e58);
+}
+.faculty-teaching .interactive-course text { pointer-events: none; }
+.faculty-legend { display: flex; flex-wrap: wrap; gap: 12px 25px; margin: 12px 0; }
+.faculty-legend span { display: inline-flex; align-items: center; gap: 8px; }
+.faculty-legend i { width: 17px; height: 17px; display: inline-block; border: 1px solid #667b66; }
+.faculty-legend .regular { background: #899a83; }
+.faculty-legend .past { background: #d9ead3; }
+.faculty-course-dialog .faculty-course-status {
+  color: #315941;
+  font-weight: 600;
+  margin: 0 0 14px;
+}
+.faculty-course-dialog .faculty-course-description { margin: 0; }
+@media (max-width: 650px) {
+  .faculty-teaching .interactive-mobile-map { display: block; }
+}

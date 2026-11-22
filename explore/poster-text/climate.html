@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Text companion for the student poster Quantifying the Increase in Climate Instability">
+<title>Quantifying the Increase in Climate Instability | Poster Text | ICCS</title>
+<link rel="stylesheet" href="../../assets/style.css"><link rel="stylesheet" href="../../assets/content.css"><link rel="stylesheet" href="../../assets/accessibility.css">
+<style>.poster-transcript{max-width:850px;margin:35px auto 80px;padding:0 22px}.poster-transcript h1{font:500 clamp(36px,5vw,54px)/1.15 var(--serif)}.poster-transcript p{max-width:800px;color:#526965;line-height:1.75}.transcript-note{background:#e8f0e9;border-left:4px solid #19564f;padding:16px 20px}.transcript-body{border-top:1px solid #cbdad3;padding-top:20px}.transcript-body p{margin:0 0 1.15em}</style>
+<link rel="stylesheet" href="../../assets/times-sitewide.css">
+</head><body><a class="skip-link" href="#main-content">Skip to main content</a>
+<header class="site-header"><div class="wrap"><a class="logo" href="../../index.html">ICCS <span>/ Ithaca College · Computer Science Department</span></a><nav class="nav" aria-label="Main navigation"><a href="../../index.html#majors">Majors</a><a href="../../index.html#minors">Minors</a><a href="../student-work.html">Student Work</a></nav></div></header>
+<main id="main-content" tabindex="-1" class="poster-transcript"><p><a href="../student-work.html">← Student Work</a></p><h1>Quantifying the Increase in Climate Instability</h1>
+<p>Computational approaches to measuring changes in temperature variability.</p><p><a href="../../assets/posters/climate.pdf" target="_blank" rel="noopener">Open original poster PDF ↗</a></p>
+<div class="transcript-note"><strong>About this text version:</strong> Extracted from the original PDF. This draft transcription makes poster text available without viewing the graphic, but column reading order, figures, tables, and OCR accuracy still require a human accessibility review.</div>
+<section aria-labelledby="poster-transcript-heading"><h2 id="poster-transcript-heading">Poster text</h2><div class="transcript-body"><p>Quantifying the Increase in Climate Instability Patrick Bierach, Ali Erkan Ithaca College Department of Computer Science</p>
+<p>Goal</p>
+<p>Results</p>
+<p>This project used two different methods for calculating climate instability. Given daily temperature readings for a year: ● Method 1 used the DP segmented least squares algorithm to fit the appropriate amount of line segments to the data for a given cost per line segment</p>
+<p>This project is an attempt to quantify the growing instability of climate. We focus on temperature readings from cities [1] throughout the continental US and explore ways to assess the growing variability as a function of time. This instability was then overlaid with tornado data in an attempt to find a correlation.</p>
+<p>● Method 2 counted the change in the sign of the slope of the readings. For example, for a single week, if temperature readings were: 65→67→70→54→60→62→63 The week would have an “instability count” of 2 because of the change from 70 to 54 (increasing to decreasing) and the change from 54 to 60 (decreasing to increasing)</p>
+<p>Methodology</p>
+<p>95 9</p>
+<p>01</p>
+<p>-2</p>
+<p>Given a set of N points (temperature readings), we want to fit some number of line segments in order to maximize accuracy but minimize the cost and error of fit. Given that the best possible solution to minimize error would be N-1 segments, a cost is associated with creating a segment to avoid this outcome.</p>
+<p>19</p>
+<p>In order to calculate a time proxy for climate instability, we wanted to utilize a dynamic programming implementation of the Segmented Least Squares Problem [2].</p>
+<p>A general visualization of the process it took to calculate an instability for a region (Instability came from the slope of a regression line which was computed on the number of line segments needed per year to fit daily temperature readings).</p>
+<p>A top down implementation recursively considers and finds an optimal segment for all subproblems. For example, given a computed segment for points i - N, the subproblem would be considering a segment for points 1 - (i-1).</p>
+<p>1</p>
+<p>For each location with readings, the above methods calculated instability. This process was done for the every year in the data, and then, a regression line was fit to the instabilities. The slope of that line served as the overall quantifier for the change in stability in that location over the 24 years used from the dataset.</p>
+<p>Further Work ● Production of a more comprehensive dataset or combination of multiple datasets so that data interpolation is less prevalent to find unknown values ● Calculating a monetary measurement of the damages from natural disasters in order to create a cost for the changing stability</p>
+<p>i-1 subproblem</p>
+<p>i</p>
+<p>Definition of Instability</p>
+<p>N</p>
+<p>Acknowledgements I would like to thank Ali Erkan (Ithaca College) for his help creating the maps and interpolating the data. I’m grateful for the opportunity he has given to me and my peers to present at CCSCNE.</p>
+<p>To begin, the algorithm computes the error of fitting an optimal segment for each point to every other point. These resulting segments are cached to avoid unnecessary recursive calls. The algorithm then checks all calculated segments and all of the possible subproblems that arise from choosing that segment while keeping track of the optimal solution (the one that minimizes cost and error). When the algorithm finishes running it returns that optimal solution.</p>
+<p>The map on the left shows interpolated instability intensities calculated via Method 2 (See Definition of Instability section). The map on the left is a heatmap of the difference in tornado activity from the last 10 years to the last 5 years</p>
+<p>● Across the continental US, more locations saw an increase in instability than a decrease (or no change) ○ The color gradient visually depicts the instability change for a region (red increasing, blue - decreasing) ● No calculations were run to compute a spatial correlation between the instability change and tornado prevalence so no conclusion can be made at this time</p>
+<p>References [1] &quot;University of Dayton - Environmental Protection Agency Average Daily Temperature Archive, http://academic.udayton.edu/kissock/http/Weather/default.ht m&quot; [2] J. Kleinberg and Tardos Éva, “Segmented Least Squares: Multi-way Choices,” in Algorithm Design, 1st ed., New York: Pearson, 2006, pp. 261–266.</p></div></section>
+</main><footer class="footer"><div class="wrap"><span>Ithaca College · Computer Science Department (ICCS)</span></div></footer><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5e9716c8fc42e9e',t:'MTc5NTM2NjMzMA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5e9716c8fc42e9e',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body></html>
