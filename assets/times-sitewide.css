@@ -10,3 +10,43 @@ svg text, .interactive-curriculum svg text,
 .interactive-prereq-dialog h2, .interactive-prereq-dialog h3 {
   font-family: "Times New Roman", Times, serif !important;
 }
+
+/* Consistent wide, left-aligned content across interior pages.
+   The homepage retains its existing composition; Student Work retains
+   its gallery and poster-transcript layouts. */
+main:not(:has(.hero, .poster-gallery)) .wrap,
+main.wrap:not(:has(.hero, .poster-gallery)) {
+  width: 92%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+main:not(:has(.hero, .poster-gallery)) .wrap.reading-width {
+  max-width: none;
+}
+main:not(:has(.hero, .poster-gallery)) .text-section p,
+main:not(:has(.hero, .poster-gallery)) .section-heading p {
+  max-width: none;
+}
+main:not(:has(.hero, .poster-gallery)) p,
+main:not(:has(.hero, .poster-gallery)) h1,
+main:not(:has(.hero, .poster-gallery)) h2,
+main:not(:has(.hero, .poster-gallery)) h3 {
+  text-align: left;
+  text-indent: 0;
+}
+main.reasons-content {
+  width: 92%;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (max-width: 650px) {
+  main:not(:has(.hero, .poster-gallery)) .wrap,
+  main.wrap:not(:has(.hero, .poster-gallery)),
+  main.reasons-content {
+    width: calc(100% - 36px);
+  }
+}
