@@ -1,0 +1,50 @@
+/* Minimal, consistently left-aligned faculty profiles. */
+.faculty-page {
+  padding-top: 40px;
+  padding-bottom: 46px;
+}
+.faculty-page .page-title {
+  margin: 0 0 22px;
+}
+.faculty-page p {
+  max-width: 920px;
+  margin: 0 0 18px;
+  line-height: 1.75;
+}
+.faculty-page .faculty-projects {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px;
+  max-width: 920px;
+}
+.faculty-page .faculty-projects li {
+  margin: 0 0 13px;
+  padding: 0;
+  text-align: left;
+}
+.faculty-page .faculty-diagram-intro {
+  margin: 30px 0 16px;
+}
+.faculty-diagram-intro .faculty-color-key {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 13px;
+}
+.faculty-diagram-intro .faculty-color-key i {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #667b66;
+}
+.faculty-diagram-intro .faculty-color-key .regular { background: #899a83; }
+.faculty-diagram-intro .faculty-color-key .past { background: #d9ead3; }
+.faculty-page .faculty-teaching {
+  margin: 16px 0 28px;
+}
+.faculty-page .faculty-return { margin: 34px 0 0; }
+@media(max-width:650px) {
+  .faculty-page { padding-top: 27px; }
+  .faculty-page .page-title { margin-bottom: 16px; }
+}
