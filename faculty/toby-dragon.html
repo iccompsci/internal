@@ -11,6 +11,23 @@
   <link rel="stylesheet" href="../assets/faculty-teaching.css">
   <link rel="stylesheet" href="../assets/faculty-profile.css">
 <link rel="stylesheet" href="../assets/times-sitewide.css">
+  <style>
+    .faculty-page .toby-narrative { display: flow-root; }
+    .faculty-page .toby-narrative .faculty-portrait {
+      float: left;
+      display: block;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+      object-position: center 25%;
+      border: 1px solid #7b8980;
+      margin: 0 24px 12px 0;
+    }
+    .faculty-page .toby-narrative p { max-width: none; text-align: justify; }
+    @media (max-width: 600px) {
+      .faculty-page .toby-narrative .faculty-portrait { width: 118px; height: 118px; margin: 0 14px 10px 0; }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -18,8 +35,13 @@
   <main id="main-content" tabindex="-1">
   <div class="wrap faculty-page">
     <h1 class="page-title">Toby Dragon</h1>
-    <img class="faculty-headshot" src="../assets/faculty/faculty-toby-portrait.jpg" alt="Portrait of Toby Dragon" width="180" height="180">
-    <p class="faculty-diagram-intro"><strong>Courses Taught.</strong> <span class="faculty-color-key"><i class="regular" aria-hidden="true"></i>Regularly taught</span> <span class="faculty-color-key"><i class="past" aria-hidden="true"></i>Taught in the past</span> Select a colored course to read its description. Keyboard users can use Tab and Enter.</p>
+    <div class="toby-narrative">
+      <img class="faculty-portrait" src="../assets/faculty/faculty-toby-portrait.jpg" alt="Portrait of Toby Dragon" width="180" height="180">
+      <p>Prof. Dragon's research is focused on using Computer Science to help students and teachers, the research field of Artificial Intelligence in Education (AIED). He builds and studies intelligent systems that can support and enhance learning activities.</p>
+      <p>His current work provides instructors with a means of bringing together both online and offline course materials into a unified structure that clarifies exactly what concepts are taught in a course and how the materials and assessments used in the course are related to those concepts. This information can then be used to visualize the concepts that students understand vs. the concepts that are proving to be difficult, and how those concepts are inter-related.</p>
+      <p>This project has many open areas of research for student colleagues to contribute, including but not limited to the following interesting questions: How can the system best calculate the estimate of understanding of a certain concept? How can the system best visualize this information? How can the system best use this information to offer suggestions for students? How can the system best support instructors in creating/gathering course materials? How can the system be deployed online in a way that is usable to all? How can the system predict future student performance? How can the system be applied to an entire curriculum, rather than a single course? Come help answer some of these questions.</p>
+    </div>
+    <p>Here are the courses taught by Toby: dark green ones are in his usual rotation, light green ones are those he has taught in the past. Arrows represent prerequisite relations. By clicking on a colored course, you can read its description. Keyboard users can use Tab and Enter to navigate the visual.</p>
     <div class="faculty-teaching" data-diagram="../assets/faculty/faculty-toby.svg" data-faculty="Toby Dragon" aria-label="Interactive teaching diagram for Toby Dragon">Loading teaching diagram…</div>
   </div>
 </main>
