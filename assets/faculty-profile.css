@@ -69,3 +69,19 @@
 /* Individual faculty photographs for profiles awaiting narrative copy. */
 .faculty-page .faculty-headshot { display: block; width: 180px; height: 180px; object-fit: cover; object-position: center 25%; border: 1px solid #7b8980; margin: 0 0 22px; }
 @media(max-width:600px) { .faculty-page .faculty-headshot { width: 118px; height: 118px; } }
+
+/* Faculty biographies should have a natural ragged right edge. */
+.faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) p {
+  text-align: left !important;
+  text-align-last: auto;
+  word-spacing: normal;
+}
+
+/* Avoid a narrow text strip beside the portrait on phones. */
+@media (max-width: 700px) {
+  .faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) .faculty-portrait {
+    float: none !important;
+    display: block;
+    margin: 0 0 18px 0 !important;
+  }
+}
