@@ -62,6 +62,7 @@ main.reasons-content {
  */
 body:not(:has(.poster-gallery, .poster-transcript)) main {
   --content-body-size: 18px;
+  font-size: var(--content-body-size);
 }
 
 body:not(:has(.poster-gallery, .poster-transcript)) main :is(
@@ -106,4 +107,12 @@ body:not(:has(.poster-gallery, .poster-transcript)) main :is(p, h1, h2, h3, h4, 
   body:not(:has(.poster-gallery, .poster-transcript)) main.reasons-content {
     width: calc(100% - 36px) !important;
   }
+}
+
+/* Inline links and emphasized phrases must not shrink inside regular prose.
+   Their size follows the surrounding paragraph or heading. */
+body:not(:has(.poster-gallery, .poster-transcript)) main :is(
+  a, span, strong, b, em, i, mark, code
+) {
+  font-size: inherit !important;
 }
