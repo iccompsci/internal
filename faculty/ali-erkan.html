@@ -11,6 +11,20 @@
   <link rel="stylesheet" href="../assets/faculty-teaching.css">
   <link rel="stylesheet" href="../assets/faculty-profile.css">
 <link rel="stylesheet" href="../assets/times-sitewide.css">
+  <style>
+    .faculty-page .ali-narrative { display: flow-root; }
+    .faculty-page .ali-narrative .faculty-portrait {
+      float: left; display: block; width: 180px; height: 180px;
+      object-fit: cover; object-position: center 25%;
+      border: 1px solid #7b8980; margin: 0 24px 12px 0;
+    }
+    .faculty-page .ali-narrative p { max-width: none; text-align: justify; }
+    @media (max-width: 600px) {
+      .faculty-page .ali-narrative .faculty-portrait {
+        width: 118px; height: 118px; margin: 0 14px 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -18,9 +32,14 @@
   <main id="main-content" tabindex="-1">
   <div class="wrap faculty-page">
     <h1 class="page-title">Ali Erkan</h1>
-    <img class="faculty-headshot" src="../assets/faculty/faculty-ali-portrait.jpg" alt="Portrait of Ali Erkan" width="180" height="180">
-    <p>Department Chair</p>
-    <p class="faculty-diagram-intro"><strong>Courses Taught.</strong> <span class="faculty-color-key"><i class="regular" aria-hidden="true"></i>Regularly taught</span> <span class="faculty-color-key"><i class="past" aria-hidden="true"></i>Taught in the past</span> Select a colored course to read its description. Keyboard users can use Tab and Enter.</p>
+    <div class="ali-narrative">
+      <img class="faculty-portrait" src="../assets/faculty/faculty-ali-portrait.jpg" alt="Portrait of Ali Erkan" width="180" height="180">
+      <p>Ali Erkan is a Professor and Chair of Computer Science at Ithaca College. His areas of interest include computer networks, algorithms, databases, geographic information systems (GIS), and computer science education. He earned his Ph.D. and M.S. in Computer Science and his B.S. in Computer Engineering from Lehigh University. Before joining Ithaca College in 2004, he taught at Swarthmore College; in 2011–2012, he was a Fulbright Researcher at Koç University in Istanbul.</p>
+      <p>His teaching spans introductory computing, discrete mathematics, data structures, algorithms, computer systems, networking, and databases. In Discrete Mathematics, he uses spreadsheet-based activities to help students investigate abstract ideas. In Algorithm Design, students implement algorithms, experiment with their behavior, and examine efficiency. His database courses connect relational and non-relational data, as well as spatial information, to projects involving subjects such as history, elections, and geography.</p>
+      <p>Much of his scholarship grows out of teaching and interdisciplinary applications of computing. His work on teaching minimum spanning tree algorithms received the Best Paper Award at ITiCSE 2018. His more recent work examines ways of teaching dynamic programming and explores how spreadsheets, databases, and GIS can support learning in computer science and other disciplines.</p>
+      <p>As department chair since 2021, he has helped guide curriculum development, including the introduction of an Artificial Intelligence major, new computing minors, and a Data Science major developed in collaboration with Mathematics. He received an Ithaca College Faculty Excellence Award for his work as department chair in 2025. For more details about his teaching, scholarship, and service, visit <a href="https://www.ithaca.edu/faculty/aerkan">his official Ithaca College faculty page</a>.</p>
+    </div>
+    <p>Here are the courses taught by Ali: dark green ones are in his usual rotation, light green ones are those he has taught in the past. Arrows represent prerequisite relations. By clicking on a colored course, you can read its description. Keyboard users can use Tab and Enter to navigate the visual.</p>
     <div class="faculty-teaching" data-diagram="../assets/faculty/faculty-ali.svg" data-faculty="Ali Erkan" aria-label="Interactive teaching diagram for Ali Erkan">Loading teaching diagram…</div>
   </div>
 </main>
