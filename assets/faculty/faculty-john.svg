@@ -79,7 +79,7 @@
 <!-- DM -->
 <g id="node12" class="node">
 <title>DM</title>
-<polygon fill="#899a83" stroke="#899a83" points="201.55,-389.23 130.05,-389.23 130.05,-352.73 201.55,-352.73 201.55,-389.23"/>
+<polygon fill="#d9ead3" stroke="#d9ead3" points="201.55,-389.23 130.05,-389.23 130.05,-352.73 201.55,-352.73 201.55,-389.23"/>
 <text xml:space="preserve" text-anchor="middle" x="165.8" y="-371.93" font-family="Times" font-size="14.00">Discrete</text>
 <text xml:space="preserve" text-anchor="middle" x="165.8" y="-357.68" font-family="Times" font-size="14.00">Structures</text>
 </g>
@@ -92,7 +92,7 @@
 <!-- FSWD -->
 <g id="node9" class="node">
 <title>FSWD</title>
-<polygon fill="#899a83" stroke="#899a83" points="320.73,-562.03 248.48,-562.03 248.48,-525.53 320.73,-525.53 320.73,-562.03"/>
+<polygon fill="#d9ead3" stroke="#d9ead3" points="320.73,-562.03 248.48,-562.03 248.48,-525.53 320.73,-525.53 320.73,-562.03"/>
 <text xml:space="preserve" text-anchor="middle" x="284.6" y="-544.73" font-family="Times" font-size="14.00">Full&#45;Stack</text>
 <text xml:space="preserve" text-anchor="middle" x="284.6" y="-530.48" font-family="Times" font-size="14.00">Web Dev</text>
 </g>
@@ -202,7 +202,7 @@
 <!-- CN -->
 <g id="node25" class="node">
 <title>CN</title>
-<polygon fill="#899a83" stroke="#899a83" points="438.4,-994.03 368.4,-994.03 368.4,-957.53 438.4,-957.53 438.4,-994.03"/>
+<polygon fill="#d9ead3" stroke="#d9ead3" points="438.4,-994.03 368.4,-994.03 368.4,-957.53 438.4,-957.53 438.4,-994.03"/>
 <text xml:space="preserve" text-anchor="middle" x="403.4" y="-976.73" font-family="Times" font-size="14.00">Computer</text>
 <text xml:space="preserve" text-anchor="middle" x="403.4" y="-962.48" font-family="Times" font-size="14.00">Networks</text>
 </g>
@@ -215,7 +215,7 @@
 <!-- AOS -->
 <g id="node27" class="node">
 <title>AOS</title>
-<polygon fill="#899a83" stroke="#899a83" points="565.83,-871.55 478.58,-871.55 478.58,-820.8 565.83,-820.8 565.83,-871.55"/>
+<polygon fill="#d9ead3" stroke="#d9ead3" points="565.83,-871.55 478.58,-871.55 478.58,-820.8 565.83,-820.8 565.83,-871.55"/>
 <text xml:space="preserve" text-anchor="middle" x="522.2" y="-854.25" font-family="Times" font-size="14.00">Algorithms+</text>
 <text xml:space="preserve" text-anchor="middle" x="522.2" y="-840" font-family="Times" font-size="14.00">Organization</text>
 <text xml:space="preserve" text-anchor="middle" x="522.2" y="-825.75" font-family="Times" font-size="14.00">=Systems</text>
