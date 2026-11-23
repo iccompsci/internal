@@ -50,3 +50,60 @@ main.reasons-content {
     width: calc(100% - 36px);
   }
 }
+
+/*
+ * Typography and content-width standard, based on the Computer Science
+ * major page. Applied to all pages except the Student Work gallery and
+ * its poster-text companions.
+ *
+ * Ordinary text: 18px Times New Roman, irrespective of section.
+ * Headings keep their typographic hierarchy. All prose uses the same
+ * available width; diagrams keep their own sensible maximum dimensions.
+ */
+body:not(:has(.poster-gallery, .poster-transcript)) main {
+  --content-body-size: 18px;
+}
+
+body:not(:has(.poster-gallery, .poster-transcript)) main :is(
+  p, li, dt, dd, blockquote, figcaption, summary, label, button, input, textarea, select, small
+) {
+  font-size: var(--content-body-size) !important;
+  line-height: 1.7;
+}
+
+/* The homepage and interior pages share a single content width and gutter. */
+body:not(:has(.poster-gallery, .poster-transcript)) main .wrap,
+body:not(:has(.poster-gallery, .poster-transcript)) main.wrap,
+body:not(:has(.poster-gallery, .poster-transcript)) main.reasons-content {
+  width: 92% !important;
+  max-width: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* Do not shrink prose in opening copy, explanations, course listings, or captions. */
+body:not(:has(.poster-gallery, .poster-transcript)) main :is(
+  p, blockquote, figcaption, .intro, .lead-copy,
+  .reading-width, .cs-opening-copy, .section-heading,
+  .section-heading > div, .group-head p, .answer p,
+  .course-entry p, .page-title, .reasons-content
+) {
+  max-width: none !important;
+}
+body:not(:has(.poster-gallery, .poster-transcript)) main .section-heading > div {
+  flex: 1 1 100%;
+  min-width: 0;
+}
+
+/* Main content starts flush at the shared left edge, without paragraph indents. */
+body:not(:has(.poster-gallery, .poster-transcript)) main :is(p, h1, h2, h3, h4, h5, h6) {
+  text-align: left;
+  text-indent: 0 !important;
+}
+@media (max-width: 650px) {
+  body:not(:has(.poster-gallery, .poster-transcript)) main .wrap,
+  body:not(:has(.poster-gallery, .poster-transcript)) main.wrap,
+  body:not(:has(.poster-gallery, .poster-transcript)) main.reasons-content {
+    width: calc(100% - 36px) !important;
+  }
+}
