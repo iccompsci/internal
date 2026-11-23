@@ -13,11 +13,11 @@
 <link rel="stylesheet" href="../assets/times-sitewide.css">
   <style>
     .faculty-page .john-narrative { display: flow-root; }
-    .faculty-page .john-narrative .faculty-portrait { float: left; display: block; width: 180px; height: 180px; border: 1px solid #7b8980; margin: 0 24px 12px 0; background: #faf9f6 url("../assets/faculty-collage-transparent.png") left -5px / 810px auto no-repeat; }
+    .faculty-page .john-narrative .faculty-portrait { float: left; display: block; width: 180px; height: 180px; object-fit: cover; object-position: center 30%; border: 1px solid #7b8980; margin: 0 24px 12px 0; }
     .faculty-page .john-narrative p { max-width: none; text-align: justify; }
     .faculty-page .john-narrative ul.faculty-projects { list-style: disc outside; padding-left: 1.6em; margin: 0 0 18px; max-width: 1120px; }
     .faculty-page .john-narrative ul.faculty-projects li { display: list-item; list-style: disc outside; padding-left: 0; margin: 0 0 8px; text-align: left; }
-    @media (max-width: 600px) { .faculty-page .john-narrative .faculty-portrait { width: 118px; height: 118px; margin: 0 14px 10px 0; background-size: 530px auto; background-position: left -3px; } }
+    @media (max-width: 600px) { .faculty-page .john-narrative .faculty-portrait { width: 118px; height: 118px; margin: 0 14px 10px 0;  } }
   </style>
 </head>
 <body>
@@ -27,7 +27,7 @@
   <div class="wrap faculty-page">
     <h1 class="page-title">John Barr</h1>
     <div class="john-narrative">
-      <div class="faculty-portrait" role="img" aria-label="Portrait of John Barr"></div>
+      <img class="faculty-portrait" src="../assets/faculty/john-barr-portrait.jpg" alt="Portrait of John Barr" width="180" height="180">
     <p>Professor Barr’s research interests currently span two fields: the use of mobile technology and computer systems. Contemporary culture has become centered around phones and tablets, and much of the computation done in many fields is now performed with these devices. Professor Barr’s research explores the use of mobile devices in general, but especially in ways that provide for social good and for education.</p>
         <p>There are currently several opportunities for students to participate in creating solutions involving apps in several areas, including:</p>
         <ul class="faculty-projects">
