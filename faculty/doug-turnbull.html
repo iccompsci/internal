@@ -16,8 +16,10 @@
     .faculty-page .doug-narrative .faculty-portrait { float: left; width: 180px; height: 180px; display: block; object-fit: cover; object-position: center 25%; border: 1px solid #7b8980; margin: 0 24px 12px 0; }
     .faculty-page .doug-narrative p { max-width: none; text-align: justify; }
     .faculty-page .doug-narrative ol.faculty-projects { list-style: none; margin: 0 0 18px; padding: 0; max-width: 1120px; counter-reset: doug-project; }
-    .faculty-page .doug-narrative ol.faculty-projects li { display: list-item; list-style: none; margin: 0 0 10px; padding: 0 0 0 1.7em; text-indent: -1.7em; text-align: left; }
-    .faculty-page .doug-narrative ol.faculty-projects li::before { counter-increment: doug-project; content: counter(doug-project) '.'; display: inline-block; width: 1.7em; text-indent: 0; font-weight: normal; }
+    /* A flex list item forms its own formatting context and stays beside, never over, the floated portrait. */
+    .faculty-page .doug-narrative ol.faculty-projects li { display: flex; align-items: baseline; list-style: none; margin: 0 0 10px; padding: 0; text-indent: 0; text-align: left; }
+    .faculty-page .doug-narrative ol.faculty-projects li::before { counter-increment: doug-project; content: counter(doug-project) '.'; flex: 0 0 1.7em; font-weight: normal; }
+    .faculty-page .doug-narrative ol.faculty-projects li .project-copy { display: block; flex: 1 1 0; min-width: 0; }
     @media (max-width: 600px) { .faculty-page .doug-narrative .faculty-portrait { width: 118px; height: 118px; margin: 0 14px 10px 0; } }
   </style>
 </head>
@@ -32,9 +34,9 @@
       <p>Doug Turnbull is a professor in the Department of Computer Science at Ithaca College. His main research interests include music information retrieval, recommender systems, machine learning, and technology for social good. His research centers on locally focused music recommendation.</p>
       <p>Doug's research focuses on building novel applications to help people discover, enjoy and benefit from music. During summer 2019, students in his JimiLab worked on three related music technology projects:</p>
       <ol class="faculty-projects">
-        <li><strong>Localify:</strong> a web app exploring how to help Spotify users discover local musicians.</li>
-        <li><strong>Long-Tail Playlist Recommendation:</strong> developing playlist algorithms to help people discover artists who are not normally recommended by commercial music services.</li>
-        <li><strong>Content-based Song Selection:</strong> exploring deep learning models for choosing the next song on a music playlist.</li>
+        <li><span class="project-copy"><strong>Localify:</strong> a web app exploring how to help Spotify users discover local musicians.</span></li>
+        <li><span class="project-copy"><strong>Long-Tail Playlist Recommendation:</strong> developing playlist algorithms to help people discover artists who are not normally recommended by commercial music services.</span></li>
+        <li><span class="project-copy"><strong>Content-based Song Selection:</strong> exploring deep learning models for choosing the next song on a music playlist.</span></li>
       </ol>
       <p>For more information, visit <a href="https://dougturnbull.org/">Doug's academic website and research blog</a> and <a href="https://dougturnbull.org/index.php/jimilab/">Doug's Lab</a>. If you are interested in supporting local music communities, check out <a href="https://localify.org/">Localify.org</a>. You are welcome to drop by Doug's office to talk about your own ideas involving music technology, machine learning, or recommender systems.</p>
     </div>
