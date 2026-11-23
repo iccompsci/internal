@@ -15,11 +15,11 @@
     .faculty-page .john-narrative { display: flow-root; }
     .faculty-page .john-narrative .faculty-portrait { float: left; display: block; width: 180px; height: 180px; object-fit: cover; object-position: center 30%; border: 1px solid #7b8980; margin: 0 24px 12px 0; }
     .faculty-page .john-narrative p { max-width: none; text-align: justify; }
-    .faculty-page .john-narrative ul.faculty-projects { list-style: none; margin: 0 0 18px; padding: 0; max-width: 1120px; }
-    /* A flex list item forms its own formatting context and stays beside, never over, the floated portrait. */
-    .faculty-page .john-narrative ul.faculty-projects li { display: flex; align-items: baseline; list-style: none; margin: 0 0 10px; padding: 0; text-indent: 0; text-align: left; }
-    .faculty-page .john-narrative ul.faculty-projects li::before { content: '•'; flex: 0 0 1.7em; font-weight: normal; }
-    .faculty-page .john-narrative ul.faculty-projects li .project-copy { display: block; flex: 1 1 0; min-width: 0; }
+    /* The list establishes a formatting context, staying clear of the floated photograph. */
+    .faculty-page .john-narrative ul.faculty-projects { display: flow-root; list-style: disc outside; padding-left: 2em; margin: 0 0 18px; max-width: 1120px; }
+    .faculty-page .john-narrative ul.faculty-projects li { display: list-item; list-style: disc outside; padding: 0; margin: 0 0 10px; text-indent: 0; text-align: left; }
+    .faculty-page .john-narrative ul.faculty-projects li::before { content: none; }
+    .faculty-page .john-narrative ul.faculty-projects li .project-copy { display: inline; }
     @media (max-width: 600px) { .faculty-page .john-narrative .faculty-portrait { width: 118px; height: 118px; margin: 0 14px 10px 0;  } }
   </style>
 </head>
