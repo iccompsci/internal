@@ -48,3 +48,16 @@
   .faculty-page { padding-top: 27px; }
   .faculty-page .page-title { margin-bottom: 16px; }
 }
+
+/* Align every faculty name, paragraph, list item and diagram to the same edge. */
+.faculty-page,
+.faculty-page .page-title,
+.faculty-page p,
+.faculty-page .faculty-projects,
+.faculty-page .faculty-projects li,
+.faculty-page .faculty-teaching {
+  text-align: left;
+  text-indent: 0;
+  padding-left: 0;
+  margin-left: 0;
+}
