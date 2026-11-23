@@ -65,3 +65,7 @@
   padding-left: 0;
   margin-left: 0;
 }
+
+/* Individual faculty photographs for profiles awaiting narrative copy. */
+.faculty-page .faculty-headshot { display: block; width: 180px; height: 180px; object-fit: cover; object-position: center 25%; border: 1px solid #7b8980; margin: 0 0 22px; }
+@media(max-width:600px) { .faculty-page .faculty-headshot { width: 118px; height: 118px; } }
