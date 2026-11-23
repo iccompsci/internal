@@ -11,6 +11,14 @@
   <link rel="stylesheet" href="../assets/faculty-teaching.css">
   <link rel="stylesheet" href="../assets/faculty-profile.css">
 <link rel="stylesheet" href="../assets/times-sitewide.css">
+  <style>
+    .faculty-page .doug-narrative { display: flow-root; }
+    .faculty-page .doug-narrative .faculty-portrait { float: left; width: 180px; height: 180px; display: block; object-fit: cover; object-position: center 25%; border: 1px solid #7b8980; margin: 0 24px 12px 0; }
+    .faculty-page .doug-narrative p { max-width: none; text-align: justify; }
+    .faculty-page .doug-narrative ol.faculty-projects { list-style: decimal outside; margin: 0 0 18px; padding-left: 1.8em; max-width: 1120px; }
+    .faculty-page .doug-narrative ol.faculty-projects li { display: list-item; list-style: decimal outside; padding-left: 0; margin: 0 0 8px; text-align: left; }
+    @media (max-width: 600px) { .faculty-page .doug-narrative .faculty-portrait { width: 118px; height: 118px; margin: 0 14px 10px 0; } }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -18,7 +26,18 @@
   <main id="main-content" tabindex="-1">
   <div class="wrap faculty-page">
     <h1 class="page-title">Doug Turnbull</h1>
-    <p class="faculty-diagram-intro"><strong>Courses Taught.</strong> <span class="faculty-color-key"><i class="regular" aria-hidden="true"></i>Regularly taught</span> <span class="faculty-color-key"><i class="past" aria-hidden="true"></i>Taught in the past</span> Select a colored course to read its description. Keyboard users can use Tab and Enter.</p>
+    <div class="doug-narrative">
+      <img class="faculty-portrait" src="../assets/faculty/doug-turnbull-portrait.jpg" alt="Portrait of Doug Turnbull" width="180" height="180">
+      <p>Doug Turnbull is a professor in the Department of Computer Science at Ithaca College. His main research interests include music information retrieval, recommender systems, machine learning, and technology for social good. His research centers on locally focused music recommendation.</p>
+      <p>Doug's research focuses on building novel applications to help people discover, enjoy and benefit from music. During summer 2019, students in his JimiLab worked on three related music technology projects:</p>
+      <ol class="faculty-projects">
+        <li><strong>Localify:</strong> a web app exploring how to help Spotify users discover local musicians.</li>
+        <li><strong>Long-Tail Playlist Recommendation:</strong> developing playlist algorithms to help people discover artists who are not normally recommended by commercial music services.</li>
+        <li><strong>Content-based Song Selection:</strong> exploring deep learning models for choosing the next song on a music playlist.</li>
+      </ol>
+      <p>For more information, visit <a href="https://dougturnbull.org/">Doug's academic website and research blog</a> and <a href="https://dougturnbull.org/index.php/jimilab/">Doug's Lab</a>. If you are interested in supporting local music communities, check out <a href="https://localify.org/">Localify.org</a>. You are welcome to drop by Doug's office to talk about your own ideas involving music technology, machine learning, or recommender systems.</p>
+    </div>
+    <p>Here are the courses taught by Doug: dark green ones are in his usual rotation, light green ones are those he has taught in the past. Arrows represent prerequisite relations. By clicking on a colored course, you can read its description. Keyboard users can use Tab and Enter to navigate the visual.</p>
     <div class="faculty-teaching" data-diagram="../assets/faculty/faculty-doug.svg" data-faculty="Doug Turnbull" aria-label="Interactive teaching diagram for Doug Turnbull">Loading teaching diagram…</div>
   </div>
 </main>
