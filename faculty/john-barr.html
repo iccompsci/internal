@@ -11,6 +11,12 @@
   <link rel="stylesheet" href="../assets/faculty-teaching.css">
   <link rel="stylesheet" href="../assets/faculty-profile.css">
 <link rel="stylesheet" href="../assets/times-sitewide.css">
+  <style>
+    .faculty-page .john-narrative { display: flow-root; }
+    .faculty-page .john-narrative .faculty-portrait { float: left; display: block; width: 180px; height: 180px; object-fit: cover; object-position: center top; border: 1px solid #7b8980; margin: 0 24px 12px 0; }
+    .faculty-page .john-narrative p { max-width: none; text-align: justify; }
+    @media (max-width: 600px) { .faculty-page .john-narrative .faculty-portrait { width: 118px; height: 118px; margin: 0 14px 10px 0; } }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -18,6 +24,8 @@
   <main id="main-content" tabindex="-1">
   <div class="wrap faculty-page">
     <h1 class="page-title">John Barr</h1>
+    <div class="john-narrative">
+      <img class="faculty-portrait" src="https://www.ithaca.edu/sites/default/files/styles/max_width_1920/public/2021-01/barr_320_400.jpg.webp?itok=5yeuGehU" alt="Portrait of John Barr" width="180" height="180">
     <p>Professor Barr’s research interests currently span two fields: the use of mobile technology and computer systems. Contemporary culture has become centered around phones and tablets, and much of the computation done in many fields is now performed with these devices. Professor Barr’s research explores the use of mobile devices in general, but especially in ways that provide for social good and for education.</p>
         <p>There are currently several opportunities for students to participate in creating solutions involving apps in several areas, including:</p>
         <ul class="faculty-projects">
@@ -27,6 +35,7 @@
           <li>Developing an app that helps students with food security.</li>
         </ul>
         <p>In addition, Prof. Barr is exploring the use of FPGAs (field programmable gate arrays) in the classroom. FPGAs are hardware devices that can be reconfigured using a special hardware design language. Using this language, we can create processors, memory, and specialized hardware devices for applications like machine learning. In this project, you would be exploring a hardware design language and developing materials for using FPGAs in various system classes.</p>
+    </div>
     <p class="faculty-diagram-intro"><strong>Courses Taught.</strong> <span class="faculty-color-key"><i class="regular" aria-hidden="true"></i>Regularly taught</span> <span class="faculty-color-key"><i class="past" aria-hidden="true"></i>Taught in the past</span> Select a colored course to read its description. Keyboard users can use Tab and Enter.</p>
     <div class="faculty-teaching" data-diagram="../assets/faculty/faculty-john.svg" data-faculty="John Barr" aria-label="Interactive teaching diagram for John Barr">Loading teaching diagram…</div>
   </div>
