@@ -65,8 +65,6 @@
   object-fit: contain;
   opacity: .86;
   filter: contrast(.94) saturate(.92);
-  /* Light pixels in the collage should not mask the faint background art. */
-  mix-blend-mode: multiply;
 }
 
 /* The alpha channel, rather than a CSS fade, exposes the page background. */
@@ -92,33 +90,21 @@
 }
 
 /* One quiet illustration behind the introduction and faculty collage. */
-.landing-intro { position: relative; isolation: isolate; }
-.landing-intro::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: url('illustrations/cs-binary-depth-matched.png') center / cover no-repeat;
-  opacity: .13;
-  pointer-events: none;
+.landing-intro {
+  /* A single, uninterrupted backdrop behind both text and transparent portraits. */
+  background-image:
+    linear-gradient(rgba(250,249,245,.87),rgba(250,249,245,.87)),
+    url('illustrations/cs-binary-depth-matched.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero { display: block; padding: 60px 36px 42px; min-height: 0; }
 .hero::before { content: none; }
 .hero > div:first-child { max-width: 100%; }
 .hero p { max-width: 900px; }
 .hero-art-network { display: none; }
-.landing-intro .faculty-strip { position: relative; isolation: isolate; margin-top: 0; padding-bottom: 28px; }
-.landing-intro .faculty-strip::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  z-index: -1;
-  background: url('illustrations/cs-binary-depth-matched.png') center / cover no-repeat;
-  opacity: .13;
-  -webkit-mask-image: linear-gradient(to bottom, transparent, black 28%);
-  mask-image: linear-gradient(to bottom, transparent, black 28%);
-  pointer-events: none;
-}
+.landing-intro .faculty-strip { position: relative; margin-top: 0; padding-bottom: 28px; }
 .landing-intro .faculty-collage { border: 0; background: transparent; }
 
 /* The landing-page cards already identify these program categories. Keep
