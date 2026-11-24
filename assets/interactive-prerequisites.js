@@ -2,8 +2,8 @@
   const courseNames = {
     IWD: 'Introduction to Web Development', IGD: 'Introduction to Game Design',
     WSD: 'Working with Structured Data', SSS: 'Scripting in Spreadsheets',
-    WRD: 'Working with Relational Data', CS1: 'Computer Programming I',
-    CS2: 'Computer Programming II', FSWD: 'Full Stack Web Development',
+    WRD: 'Working with Relational Data', CS1: 'Foundations of CS I',
+    CS2: 'Foundations of CS II', FSWD: 'Full Stack Web Development',
     GD: 'Game Development', Sys1: 'Computer Systems I',
     DM: 'Discrete Structures', DS: 'Data Structures',
     RDS: 'Relational Database Systems', MD: 'Mobile Development',

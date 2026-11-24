@@ -60,15 +60,15 @@
 <g id="node7" class="node">
 <title>CS1</title>
 <polygon fill="#899a83" stroke="#899a83" points="82,-475.63 12,-475.63 12,-439.13 82,-439.13 82,-475.63"/>
-<text xml:space="preserve" text-anchor="middle" x="47" y="-458.33" font-family="Times" font-size="14.00">Computer</text>
-<text xml:space="preserve" text-anchor="middle" x="47" y="-444.08" font-family="Times" font-size="14.00">Prog I</text>
+<text xml:space="preserve" text-anchor="middle" x="47" y="-458.33" font-family="Times" font-size="13.00">Foundations</text>
+<text xml:space="preserve" text-anchor="middle" x="47" y="-444.08" font-family="Times" font-size="14.00">of CS I</text>
 </g>
 <!-- CS2 -->
 <g id="node8" class="node">
 <title>CS2</title>
 <polygon fill="#d9ead3" stroke="#d9ead3" points="200.8,-475.63 130.8,-475.63 130.8,-439.13 200.8,-439.13 200.8,-475.63"/>
-<text xml:space="preserve" text-anchor="middle" x="165.8" y="-458.33" font-family="Times" font-size="14.00">Computer</text>
-<text xml:space="preserve" text-anchor="middle" x="165.8" y="-444.08" font-family="Times" font-size="14.00">Prog II</text>
+<text xml:space="preserve" text-anchor="middle" x="165.8" y="-458.33" font-family="Times" font-size="13.00">Foundations</text>
+<text xml:space="preserve" text-anchor="middle" x="165.8" y="-444.08" font-family="Times" font-size="14.00">of CS II</text>
 </g>
 <!-- CS1&#45;&gt;CS2 -->
 <g id="edge2" class="edge">
