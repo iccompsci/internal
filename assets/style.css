@@ -16,15 +16,20 @@
   .nav { column-gap: 14px; row-gap: 0; }
 }
 
-/* Preserve Graphviz's original dimensions; never stretch a diagram to fill
-   the page. On narrower screens show the existing portrait SVG and course list. */
-.landscape-diagram { display: none; }
+/* Responsive Graphviz diagrams: exactly one orientation at a time.
+   The SVG rules in interactive-prerequisites.css and faculty-teaching.css
+   would otherwise override a simple display:none on mobile. */
+.interactive-curriculum > svg.landscape-diagram,
+.faculty-teaching > svg.landscape-diagram { display: none !important; }
 @media (min-width: 1400px) {
   .interactive-curriculum.landscape-ready,
   .faculty-teaching.landscape-ready { width: 100%; max-width: 1273px; }
   .cs-curriculum .diagram-frame:has(.landscape-ready) { max-width: none; }
-  .landscape-ready > svg.portrait-diagram { display: none; }
-  .landscape-ready > svg.landscape-diagram {
-    display: block; width: 100%; max-width: 1273px; height: auto; background: transparent;
+  .interactive-curriculum.landscape-ready > svg.portrait-diagram,
+  .faculty-teaching.landscape-ready > svg.portrait-diagram { display: none !important; }
+  .interactive-curriculum.landscape-ready > svg.landscape-diagram,
+  .faculty-teaching.landscape-ready > svg.landscape-diagram {
+    display: block !important;
+    width: 100%; max-width: 1273px; height: auto; background: transparent;
   }
 }
