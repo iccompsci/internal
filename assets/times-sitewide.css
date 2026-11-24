@@ -1,8 +1,4 @@
 /* ICCS site-wide font standard. Load after all existing stylesheets. */
-:root {
-  --serif: "Times New Roman", Times, serif;
-  --sans: "Times New Roman", Times, serif;
-}
 html, body, button, input, select, textarea, summary,
 header, nav, footer, main, dialog, figure, figcaption,
 h1, h2, h3, h4, h5, h6, p, li, a, span, label,
