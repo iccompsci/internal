@@ -108,7 +108,18 @@
 .hero p { max-width: 900px; }
 .hero-art-network { display: none; }
 .landing-intro .faculty-strip { position: relative; margin-top: 0; padding-bottom: 28px; }
-.landing-intro .faculty-collage { border: 0; }
+.landing-intro .faculty-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url('illustrations/cs-binary-depth-matched.png') center / cover no-repeat;
+  opacity: .13;
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 28%);
+  mask-image: linear-gradient(to bottom, transparent, black 28%);
+  pointer-events: none;
+}
+.landing-intro .faculty-collage { border: 0; background: transparent; }
 
 /* The landing-page cards already identify these program categories. Keep
    section headings available to screen readers without occupying visual space. */
