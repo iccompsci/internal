@@ -4,25 +4,35 @@
   line-height: 1.14;
 }
 
+/* Compact, quiet navigation cards: large tap targets without empty space. */
+.cards { gap: 10px; }
 .card {
-  min-height: 66px;
-  padding: 9px 17px;
+  min-height: 54px;
+  padding: 11px 16px;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  justify-content: flex-start;
+  gap: 10px;
+  background: #eef4ef;
+  border-top: 0;
+  border-radius: 2px;
+  transition: background-color .15s ease;
 }
-
+.card:hover { background: #e2ece5; transform: none; }
+.card:focus-visible { outline-offset: 2px; }
 .card h3 {
   margin: 0;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 22px;
+  font-family: var(--serif);
+  font-size: clamp(18px, 1.6vw, 21px);
   font-weight: 600;
   line-height: 1.25;
 }
-
 .card .arrow { margin-top: 0; align-self: center; }
-.cards { gap: 12px; }
+@media (max-width: 520px) {
+  .cards { gap: 8px; }
+  .card { min-height: 54px; padding: 12px 14px; }
+  .card h3 { font-size: 19px; }
+}
 
 /* Transparent faculty cutouts sit directly on the site's cream background. */
 .faculty-collage {
