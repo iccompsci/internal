@@ -98,3 +98,15 @@
 }
 .group#faculty .group-head > div { width: 100%; }
 .group#faculty .group-head p { max-width: none; }
+
+/* Shared minor layout: one source of truth for all six minor pages. */
+.minor-opening { padding-top: 12px; padding-bottom: 0; }
+.minor-opening .wrap.reading-width { padding: 26px 0 24px; min-height: 0; }
+.minor-opening + .minor-rationale { padding-top: 30px; }
+.minor-rationale { padding-bottom: 20px; }
+#interdisciplinary-connections { padding-top: 24px; padding-bottom: 20px; }
+.minor-opening ~ #curriculum { padding-top: 24px; }
+.minor-opening ~ #curriculum .section-heading { margin-top: 0; }
+.minor-opening:not([style]) h1 { margin: 0 0 18px; }
+.minor-opening:not([style]) p { font-size: 17px; line-height: 1.8; margin: 0; }
+.pending-content { color: #607470; font-style: italic; }
