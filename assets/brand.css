@@ -112,8 +112,23 @@
   margin-bottom: 0;
   padding-bottom: 0;
 }
-.landing-intro .faculty-collage { border: 0; background: transparent; }
-.landing-intro .faculty-grade { background: transparent; }
+/* The source PNG has a transparent band under the portraits (about 7.7%).
+   Keep the image at its original scale; clip only that unused bottom band.
+   This also makes the shared background stop at the visible photo baseline. */
+.landing-intro .faculty-collage {
+  position: relative;
+  aspect-ratio: 3.25 / 1;
+  border: 0;
+  background: transparent;
+  overflow: hidden;
+}
+.landing-intro .faculty-grade {
+  position: absolute;
+  inset: 0 auto auto 0;
+  width: 100%;
+  aspect-ratio: 3 / 1;
+  background: transparent;
+}
 .landing-intro .faculty-grade img { opacity: 1; filter: none; }
 
 /* The landing-page cards already identify these program categories. Keep
