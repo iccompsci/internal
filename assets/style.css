@@ -15,3 +15,16 @@
   .site-header .wrap { padding: 5px 0; }
   .nav { column-gap: 14px; row-gap: 0; }
 }
+
+/* Landscape diagrams are offered only when there is room for readable labels.
+   The original portrait and mobile course list remain intact. */
+.landscape-diagram { display: none; }
+@media (min-width: 1250px) {
+  .interactive-curriculum.landscape-ready,
+  .faculty-teaching.landscape-ready { width: 100%; max-width: none; }
+  .cs-curriculum .diagram-frame:has(.landscape-ready) { max-width: none; }
+  .landscape-ready > svg.portrait-diagram { display: none; }
+  .landscape-ready > svg.landscape-diagram {
+    display: block; width: 100%; height: auto; max-width: none; background: transparent;
+  }
+}
