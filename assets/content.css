@@ -1,6 +1,7 @@
 .reading-width{max-width:850px}
 .visually-hidden{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.text-section{padding:63px 0;border-bottom:1px solid #d9e3da}
+.text-section{padding:30px 0;border-bottom:0}
+@media(max-width:650px){.text-section{padding:22px 0}}
 .text-section h2{font:500 clamp(35px,4vw,50px)/1.18 var(--serif);letter-spacing:-.04em;margin:14px 0 20px}
 .text-section .lead-copy{font-size:19px;color:#4b6561;line-height:1.8}
 .text-section p{color:#566b69}
@@ -33,7 +34,7 @@
 .cs-curriculum .diagram-frame img{display:block;width:100%;height:auto}
 .group-head .group-intro{max-width:650px;color:#607470;font-size:15px;line-height:1.75;margin:11px 0 0}
 .closing-link{padding-top:40px;padding-bottom:18px}
-.poster-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;padding-top:30px;padding-bottom:70px}
+.poster-gallery{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;padding-top:22px;padding-bottom:32px}
 .poster-card{background:#f0f4ef;border:1px solid #d7e2d9;min-width:0}
 .poster-card>a{display:block;aspect-ratio:1.38;background:#fff;overflow:hidden;border-bottom:1px solid #d7e2d9}
 .poster-card img{display:block;width:100%;height:100%;object-fit:contain;transition:transform .2s}
@@ -56,7 +57,7 @@
 .empty-program-title{font:500 clamp(37px,4.3vw,56px)/1.15 var(--serif);letter-spacing:-.045em;margin:0}
 @media(max-width:650px){.poster-dialog{width:100vw;height:100dvh;max-height:none}.poster-dialog-top{align-items:flex-start}.poster-dialog-top h2{font-size:17px}.poster-dialog-actions{gap:8px}.poster-preview-scroll{height:calc(100% - 90px);padding:8px}}
 @media(max-width:850px){.poster-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:540px){.poster-gallery{grid-template-columns:1fr}.text-section{padding:44px 0}.poster-card>a{aspect-ratio:1.55}}
+@media(max-width:540px){.poster-gallery{grid-template-columns:1fr;gap:16px;padding-top:16px;padding-bottom:24px}.poster-card>a{aspect-ratio:1.55}}
 .double-rule {
   border-top: 1px solid #778f78;
   border-bottom: 1px solid #778f78;

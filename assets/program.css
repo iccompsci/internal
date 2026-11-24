@@ -1,5 +1,9 @@
 /* Shared academic program layouts and curriculum diagrams. */
-.curriculum-section,.explanation-section,.sheet-section{padding:74px 0;border-bottom:1px solid #d9e3da}
+.curriculum-section,.explanation-section,.sheet-section{padding:30px 0;border-bottom:0}
+/* Closely related sections should read as one continuous page. */
+.curriculum-section{padding-bottom:22px}
+.curriculum-section + .sheet-section{padding-top:20px}
+@media(max-width:650px){.curriculum-section,.explanation-section,.sheet-section{padding:22px 0}.curriculum-section{padding-bottom:18px}.curriculum-section + .sheet-section{padding-top:16px}}
 .section-kicker{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#4b8078}
 .section-heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin:15px 0 28px}
 .section-heading h2,.explanation-grid h2{font:500 clamp(37px,4.3vw,56px)/1.15 var(--serif);letter-spacing:-.045em;margin:0 0 15px}
