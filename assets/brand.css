@@ -107,7 +107,7 @@
 .hero > div:first-child { max-width: 100%; }
 .hero p { max-width: 900px; }
 .hero-art-network { display: none; }
-.landing-intro .faculty-strip { position: relative; margin-top: 0; padding-bottom: 28px; }
+.landing-intro .faculty-strip { position: relative; isolation: isolate; margin-top: 0; padding-bottom: 28px; }
 .landing-intro .faculty-strip::before {
   content: '';
   position: absolute;
