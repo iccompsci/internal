@@ -139,3 +139,10 @@
   .hero-art-network { height: auto; min-height: 330px; }
   .hero-art-network img { max-height: 330px; }
 }
+
+/* On phones, preserve the typographic hierarchy without an oversized hero. */
+@media (max-width: 520px) {
+  .hero { padding: 30px 14px 32px; }
+  .hero h1 { font-size: clamp(34px, 8vw, 42px); line-height: 1.16; }
+  .faculty-strip { margin-bottom: 18px; }
+}

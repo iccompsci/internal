@@ -8,3 +8,10 @@
 .course-entry { border-top: 0 !important; border-bottom: 0 !important; }
 .course-entry + .course-entry { border-top: 1px solid #d9e3da !important; }
 .double-rule { display: none; }
+
+/* Interior navigation: comfortable touch targets without a bulky mobile header. */
+.nav a { display: inline-flex; align-items: center; min-height: 42px; padding: 7px 2px; font-size: 14px; }
+@media (max-width: 520px) {
+  .site-header .wrap { padding: 5px 0; }
+  .nav { column-gap: 14px; row-gap: 0; }
+}
