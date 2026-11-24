@@ -65,6 +65,8 @@
   object-fit: contain;
   opacity: .86;
   filter: contrast(.94) saturate(.92);
+  /* Light pixels in the collage should not mask the faint background art. */
+  mix-blend-mode: multiply;
 }
 
 /* The alpha channel, rather than a CSS fade, exposes the page background. */
