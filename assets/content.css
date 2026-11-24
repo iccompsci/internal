@@ -10,45 +10,12 @@
 .major-question .wrap.reading-width{max-width:1160px}
 .major-question h2,.curriculum-section .section-heading h2,.sheet-section .section-heading h2{font:500 clamp(37px,4.3vw,56px)/1.15 var(--serif);letter-spacing:-.045em;margin:0 0 15px}
 .major-question p{max-width:800px;font-size:16px;line-height:1.8}
-.cs-opening{padding-top:45px;padding-bottom:32px}
-.cs-opening .wrap.reading-width{max-width:1160px}
-.cs-opening .wrap.reading-width{display:grid;grid-template-columns:minmax(0,520px) minmax(0,240px);justify-content:start;align-items:center;gap:40px}
-.cs-opening p{max-width:800px;font-size:17px;line-height:1.8;margin:0 0 17px}
-.cs-opening p:last-child{margin-bottom:0}
-.cs-opening-art{display:block;width:100%;height:auto;aspect-ratio:810/971;object-fit:cover;object-position:80% center;background:var(--cream);border:1px solid #181e1c}
-.cs-opening-art[src*="iccs-network-rotated"]{aspect-ratio:830/1185;object-position:center}
-.ai-opening-art{aspect-ratio:1123/1243;object-fit:cover;object-position:center}
-.ds-opening-art{aspect-ratio:785/1388;object-fit:cover;object-position:center}
-.minor-opening-art{aspect-ratio:1425/987;object-fit:cover;object-position:center}
-.minor-opening-art[src*="data-centric"]{aspect-ratio:1194/882}
-/* On illustrated program pages, the art quietly fills the introduction
-   instead of occupying a separate, bordered column. */
-.cs-opening{padding-top:12px;padding-bottom:18px}
-.cs-opening .wrap.reading-width{
-  display:block;
-  position:relative;
-  isolation:isolate;
-  padding:55px 0 62px;
-  min-height:340px;
-}
-.cs-opening .wrap.reading-width::before{
-  content:'';
-  position:absolute;
-  inset:0;
-  z-index:-1;
-  background-image:var(--opening-image);
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  opacity:.13;
-  pointer-events:none;
-}
-.cs-opening .cs-opening-copy{max-width:100%}
-.cs-opening p{max-width:900px}
-.cs-opening-art{display:none}
-@media(max-width:760px){.cs-opening .wrap.reading-width{padding:35px 0 42px;min-height:0}}
-.minor-illustration{padding:18px 0 24px}
-.minor-illustration img{display:block;width:100%;max-width:880px;max-height:355px;object-fit:contain;margin:0 auto;mix-blend-mode:multiply;-webkit-mask-image:linear-gradient(to right,transparent 0%,black 6%,black 94%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,black 6%,black 94%,transparent 100%)}
+/* Consistent, illustration-free introductions for all majors and minors. */
+.cs-opening { padding: 22px 0 24px; }
+.cs-opening .wrap.reading-width { display: block; min-height: 0; padding: 12px 0; }
+.cs-opening .cs-opening-copy { max-width: 100%; }
+.cs-opening p { max-width: 900px; font-size: 17px; line-height: 1.8; margin: 0 0 17px; }
+.cs-opening p:last-child { margin-bottom: 0; }
 .native-courses .course-list{border-top:1px solid #cedbd1}
 .course-entry{display:block;padding:22px 0;border-bottom:1px solid #d9e3da}
 .course-entry h3{font:600 21px/1.3 var(--serif);margin:0;color:#21473f}

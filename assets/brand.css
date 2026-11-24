@@ -89,16 +89,9 @@
   margin-inline: auto;
 }
 
-/* Landing-page computing illustration becomes a faint backdrop for the copy. */
-.hero {
-  position: relative;
-  display: block;
-  isolation: isolate;
-  padding: 60px 36px 64px;
-  min-height: 340px;
-}
-
-.hero::before {
+/* One quiet illustration behind the introduction and faculty collage. */
+.landing-intro { position: relative; isolation: isolate; }
+.landing-intro::before {
   content: '';
   position: absolute;
   inset: 0;
@@ -107,10 +100,13 @@
   opacity: .13;
   pointer-events: none;
 }
-
+.hero { display: block; padding: 60px 36px 42px; min-height: 0; }
+.hero::before { content: none; }
 .hero > div:first-child { max-width: 100%; }
 .hero p { max-width: 900px; }
 .hero-art-network { display: none; }
+.landing-intro .faculty-strip { position: relative; margin-top: 0; padding-bottom: 28px; }
+.landing-intro .faculty-collage { border: 0; }
 
 /* The landing-page cards already identify these program categories. Keep
    section headings available to screen readers without occupying visual space. */
