@@ -104,8 +104,17 @@
 .hero > div:first-child { max-width: 100%; }
 .hero p { max-width: 900px; }
 .hero-art-network { display: none; }
-.landing-intro .faculty-strip { position: relative; margin-top: 0; padding-bottom: 28px; }
+/* Let the transparent portraits sit directly on the shared background.
+   No strip padding or margin below them: the backdrop ends with the portraits. */
+.landing-intro .faculty-strip {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
 .landing-intro .faculty-collage { border: 0; background: transparent; }
+.landing-intro .faculty-grade { background: transparent; }
+.landing-intro .faculty-grade img { opacity: 1; filter: none; }
 
 /* The landing-page cards already identify these program categories. Keep
    section headings available to screen readers without occupying visual space. */
