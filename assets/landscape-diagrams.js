@@ -89,11 +89,11 @@
       if (node.group.classList.contains('interactive-course')) {
         clone.setAttribute('role', 'button');
         clone.setAttribute('tabindex', '0');
-        clone.addEventListener('click', () => node.group.click());
+        clone.addEventListener('click', () => node.group.dispatchEvent(new MouseEvent('click', { bubbles: true })));
         clone.addEventListener('keydown', event => {
           if (event.key === 'Enter' || event.key === ' ') {
             event.preventDefault();
-            node.group.click();
+            node.group.dispatchEvent(new MouseEvent('click', { bubbles: true }));
           }
         });
       } else {
