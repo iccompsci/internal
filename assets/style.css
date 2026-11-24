@@ -16,15 +16,15 @@
   .nav { column-gap: 14px; row-gap: 0; }
 }
 
-/* Landscape diagrams are offered only when there is room for readable labels.
-   The original portrait and mobile course list remain intact. */
+/* Preserve Graphviz's original dimensions; never stretch a diagram to fill
+   the page. On narrower screens show the existing portrait SVG and course list. */
 .landscape-diagram { display: none; }
-@media (min-width: 1250px) {
+@media (min-width: 1400px) {
   .interactive-curriculum.landscape-ready,
-  .faculty-teaching.landscape-ready { width: 100%; max-width: none; }
+  .faculty-teaching.landscape-ready { width: 100%; max-width: 1273px; }
   .cs-curriculum .diagram-frame:has(.landscape-ready) { max-width: none; }
   .landscape-ready > svg.portrait-diagram { display: none; }
   .landscape-ready > svg.landscape-diagram {
-    display: block; width: 100%; height: auto; max-width: none; background: transparent;
+    display: block; width: 100%; max-width: 1273px; height: auto; background: transparent;
   }
 }
