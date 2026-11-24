@@ -14,6 +14,7 @@
   justify-content: flex-start;
   gap: 10px;
   background: #d9ead3;
+  color: #000;
   border-top: 0;
   border-radius: 2px;
   transition: background-color .15s ease;
