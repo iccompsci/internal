@@ -18,14 +18,11 @@
 .tisa-quotes{margin:0 0 26px;padding-left:1.5em}
 .tisa-quotes li{margin:0 0 14px;line-height:1.7}
 .tisa-participant-map{margin:26px 0 0}
-.tisa-participant-map img{display:block;width:min(100%,780px);height:auto;border:0}
+.tisa-participant-map img{display:block;width:min(100%,1263px);height:auto;border:0}
 .tisa-participant-map figcaption{font-size:15px;color:#526961;margin-top:10px}
-.tisa-carousel{width:min(100%,410px);margin:24px 0 26px}
-.tisa-photo{width:100%;aspect-ratio:180/170;background-image:url("../assets/tisa/seashells.webp");background-size:200% 200%;background-repeat:no-repeat}
-.tisa-photo[data-slide="0"]{background-position:left top}
-.tisa-photo[data-slide="1"]{background-position:right top}
-.tisa-photo[data-slide="2"]{background-position:left bottom}
-.tisa-photo[data-slide="3"]{background-position:right bottom}
+/* Original images remain at their native pixel dimensions; object-fit avoids cropping. */
+.tisa-carousel{width:min(100%,650px);margin:24px 0 26px}
+.tisa-photo{display:block;width:100%;aspect-ratio:3/2;object-fit:contain;background:transparent}
 .tisa-carousel-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px}
 .tisa-carousel-controls button{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;border:1px solid #cbdad3;border-radius:50%;background:#faf9f5;color:#19564f;cursor:pointer;transition:background-color .15s ease,border-color .15s ease}
 .tisa-carousel-controls button:hover{background:#d9ead3;border-color:#899a83}
@@ -43,7 +40,7 @@
 <p>TISA is a program designed specifically by the Ithaca College Computer Science faculty <a href="../faculty/toby-dragon.html">Toby Dragon</a> and <a href="../faculty/john-barr.html">John Barr</a> to help anyone and everyone get excited about technology. Rising high school sophomores, juniors, and seniors spend a week in a highly interactive learning environment to explore the ways in which technology is used across many disciplines. Ithaca College computer science faculty and current students guide hands-on activities to introduce a variety of technology-related subjects where computer programs interact with the real world, such as game development, robotics, website design, virtual reality, and artificial intelligence.</p>
 <p>Interested in joining us? Visit the <a href="https://www.ithaca.edu/tech-innovation-summer-academy">official TISA website</a> for information about upcoming sessions and how to apply. We hope to see you there.</p>
 <div class="tisa-carousel" aria-label="Photo slideshow" aria-roledescription="carousel">
-<div class="tisa-photo" role="img" aria-label="Seashells on sand" data-slide="0"></div>
+<img class="tisa-photo" src="../assets/tisa/seashell1.jpeg" alt="Seashells on sand" width="678" height="452" decoding="async">
 <div class="tisa-carousel-controls" role="group" aria-label="Photo controls">
 <button type="button" class="tisa-prev" aria-label="Previous photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
 <button type="button" class="tisa-pause" aria-label="Pause automatic slideshow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg></button>
@@ -61,7 +58,7 @@
 <li>“This program definitely gave me a new perspective on technology and computer science. I think that it is something I could see myself doing in the future as a career.”</li>
 </ul>
 <figure class="tisa-participant-map">
-<img src="../assets/tisa/participant-origins.webp" width="600" height="415" alt="Map showing locations across the Northeast and elsewhere in the United States from which TISA participants have attended." loading="lazy">
+<img src="../assets/tisa/participant-origins.png" width="1263" height="874" alt="Map showing locations across the Northeast and elsewhere in the United States from which TISA participants have attended." loading="lazy">
 <figcaption>Participants have come from across the region and the country.</figcaption>
 </figure>
 </section>
@@ -73,16 +70,21 @@
   const photo = carousel.querySelector('.tisa-photo');
   const status = carousel.querySelector('.tisa-carousel-status');
   const pauseButton = carousel.querySelector('.tisa-pause');
-  const descriptions = ["Seashells on sand","A collection of colorful seashells","Seashells beside ocean foam","Seashells arranged in a basket"];
+  const slides = [
+    { src: '../assets/tisa/seashell1.jpeg', alt: 'A collection of cream-colored seashells' },
+    { src: '../assets/tisa/seashell2.jpeg', alt: 'A large orange conch shell resting on a sandy beach' },
+    { src: '../assets/tisa/seashell3.jpeg', alt: 'A large conch shell on the shore with sea foam' },
+    { src: '../assets/tisa/seashell4.jpeg', alt: 'Hands holding a collection of seashells' }
+  ];
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let index = 0;
   let timer = null;
   let paused = reducedMotion.matches;
   function display(next) {
-    index = (next + descriptions.length) % descriptions.length;
-    photo.dataset.slide = String(index);
-    photo.setAttribute('aria-label', descriptions[index]);
-    status.textContent = 'Photograph ' + (index + 1) + ' of ' + descriptions.length;
+    index = (next + slides.length) % slides.length;
+    photo.src = slides[index].src;
+    photo.alt = slides[index].alt;
+    status.textContent = 'Photograph ' + (index + 1) + ' of ' + slides.length;
   }
   function stop() {
     if (timer !== null) window.clearInterval(timer);
