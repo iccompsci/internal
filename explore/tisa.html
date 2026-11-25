@@ -6,15 +6,54 @@
   <meta name="description" content="Draft academic program information page. Content forthcoming.">
   <title>TISA | ICCS · Ithaca College</title>
   <link rel="stylesheet" href="../assets/style.css">
-  <!-- Add the chosen analytics snippet here when privacy approval is complete. -->
+
 <link rel="stylesheet" href="../assets/accessibility.css"><link rel="stylesheet" href="../assets/times-sitewide.css">
+<style>
+/* Standalone TISA sample carousel; replace placeholder photos later. */
+.tisa-gallery{padding:22px 0 34px}
+.tisa-gallery h2{font:500 clamp(32px,4vw,46px)/1.2 var(--serif);margin:0 0 10px}
+.tisa-gallery p{margin:0 0 16px}
+.tisa-carousel{max-width:850px}
+.tisa-carousel figure{margin:0}
+.tisa-carousel figure[hidden]{display:none}
+.tisa-carousel img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#e5f0ea}
+.tisa-carousel figcaption{font-size:14px;margin-top:8px}
+.tisa-carousel-controls{display:flex;align-items:center;gap:16px;margin-top:12px}
+.tisa-carousel-controls button{background:#d9ead3;border:1px solid #899a83;border-radius:2px;color:#000;padding:7px 14px;font:inherit;cursor:pointer}
+.tisa-carousel-controls button:hover{background:#c9dfc1}
+.tisa-carousel-controls button:focus-visible{outline:3px solid #19564f;outline-offset:3px}
+.tisa-carousel-status{font-size:14px}
+</style>
 </head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header"><div class="wrap"><nav class="nav" aria-label="Main navigation"><a href="../index.html">Home</a><a href="../index.html#majors">Majors</a><a href="../index.html#minors">Minors</a><a href="../index.html#micro-credentials">Micro-credentials</a><a href="../index.html#faculty">Faculty</a><a href="../index.html#other">Other</a></nav></div></header>
 <main id="main-content" tabindex="-1">
-<section class="inner-hero"><div class="wrap"><h1 class="page-title">TISA</h1><p class="intro">Information about this tisa will be added here.</p></div></section>
-<section class="wrap placeholder"><div><span class="pill">Content forthcoming</span><h2>About this page</h2><p>This page is ready for its official description, key details, and any illustrations or brochures. The text here is a placeholder only.</p></div><aside class="todo"><strong>Suggested future content</strong><ul><li>Short introduction</li><li>Program highlights or requirements</li><li>Relevant SVG diagram or PDF resource</li><li>Admissions or inquiry link</li></ul></aside></section>
+<section class="inner-hero"><div class="wrap"><h1 class="page-title">Tech Innovation Summer Academy (TISA)</h1></div></section>
+<section class="wrap tisa-gallery" aria-labelledby="tisa-gallery-heading">
+<h2 id="tisa-gallery-heading">TISA in Pictures</h2>
+<p>This is a sample photo carousel using seashells. Individual TISA photographs will replace these placeholders.</p>
+<div class="tisa-carousel" aria-label="Photo carousel prototype">
+<figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Conch_shell.jpg?width=960" alt="A conch shell on a beach" loading="eager"><figcaption>Sample photograph: <a href="https://commons.wikimedia.org/wiki/File:Conch_shell.jpg" target="_blank" rel="noopener">Conch shell (Wikimedia Commons)</a></figcaption></figure>
+<figure hidden><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scallop_Shell.png?width=960" alt="A scallop shell on beach sand" loading="lazy"><figcaption>Sample photograph: <a href="https://commons.wikimedia.org/wiki/File:Scallop_Shell.png" target="_blank" rel="noopener">Scallop shell (Wikimedia Commons)</a></figcaption></figure>
+<figure hidden><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Seashells_on_the_sea_shore.jpg?width=960" alt="Seashells on the shore" loading="lazy"><figcaption>Sample photograph: <a href="https://commons.wikimedia.org/wiki/File:Seashells_on_the_sea_shore.jpg" target="_blank" rel="noopener">Seashells on the sea shore (Wikimedia Commons)</a></figcaption></figure>
+<div class="tisa-carousel-controls"><button type="button" class="tisa-prev">Previous</button><span class="tisa-carousel-status" role="status" aria-live="polite">1 of 3</span><button type="button" class="tisa-next">Next</button></div>
+</div></section>
 </main>
+<script>
+(() => {
+  const carousel = document.querySelector('.tisa-carousel');
+  const slides = Array.from(carousel.querySelectorAll('figure'));
+  const status = carousel.querySelector('.tisa-carousel-status');
+  let index = 0;
+  function show(next) {
+    index = (next + slides.length) % slides.length;
+    slides.forEach((slide, i) => { slide.hidden = i !== index; });
+    status.textContent = (index + 1) + ' of ' + slides.length;
+  }
+  carousel.querySelector('.tisa-prev').addEventListener('click', () => show(index - 1));
+  carousel.querySelector('.tisa-next').addEventListener('click', () => show(index + 1));
+})();
+</script>
 
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a5e970ef1df20cfb',t:'MTc5NTM2NjMxMA=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a5e970ef1df20cfb',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
