@@ -92,6 +92,14 @@
   float: left; display: block; width: 180px; height: 180px; object-fit: cover;
   object-position: center 25%; border: 1px solid #7b8980; margin: 0 24px 12px 0;
 }
+/* Keep Toby's list markers and text together beside the floated portrait. */
+.faculty-page .toby-narrative ul {
+  display: flow-root;
+  list-style: disc outside;
+  padding-left: 2em;
+  margin: 0 0 18px;
+}
+.faculty-page .toby-narrative li { margin: 0; padding: 0; text-indent: 0; }
 .faculty-page .john-narrative .faculty-portrait { object-position: center 30%; }
 .faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) p { max-width: none; text-align: left; }
 .faculty-page .john-narrative ul.faculty-projects,
