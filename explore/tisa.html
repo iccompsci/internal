@@ -3,55 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A sample photograph carousel for Ithaca College’s Tech Innovation Summer Academy (TISA).">
+  <meta name="description" content="The Tech Innovation Summer Academy introduces high school students to computing through hands-on projects at Ithaca College.">
   <title>TISA | ICCS · Ithaca College</title>
   <link rel="stylesheet" href="../assets/style.css">
 
 <link rel="stylesheet" href="../assets/accessibility.css"><link rel="stylesheet" href="../assets/times-sitewide.css">
 <style>
-/* Standalone TISA sample carousel; replace placeholder photos later. */
-.tisa-gallery{padding:22px 0 34px}
-.tisa-gallery h2{font:500 clamp(32px,4vw,46px)/1.2 var(--serif);margin:0 0 10px}
-.tisa-gallery p{margin:0 0 16px}
-.tisa-carousel{max-width:850px}
-.tisa-carousel figure{margin:0}
-.tisa-carousel figure[hidden]{display:none}
-.tisa-carousel img{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#e5f0ea}
-.tisa-carousel figcaption{font-size:14px;margin-top:8px}
-.tisa-carousel-controls{display:flex;align-items:center;gap:16px;margin-top:12px}
-.tisa-carousel-controls button{background:#d9ead3;border:1px solid #899a83;border-radius:2px;color:#000;padding:7px 14px;font:inherit;cursor:pointer}
+/* Page-specific TISA content, with the same type and spacing as other ICCS pages. */
+.tisa-main{padding:20px 0 36px}
+.tisa-main h1{font:500 clamp(38px,5vw,58px)/1.13 var(--serif);letter-spacing:-.035em;margin:14px 0 24px}
+.tisa-main h2{font:500 clamp(30px,3.7vw,44px)/1.2 var(--serif);letter-spacing:-.035em;margin:22px 0 16px}
+.tisa-main p{margin:0 0 20px;line-height:1.7}
+.tisa-main a{color:#19564f;text-underline-offset:3px}
+.tisa-quotes{margin:0 0 26px;padding-left:1.5em}
+.tisa-quotes li{margin:0 0 14px;line-height:1.7}
+.tisa-participant-map{margin:26px 0 0}
+.tisa-participant-map img{display:block;width:min(100%,780px);height:auto;border:0}
+.tisa-participant-map figcaption{font-size:15px;color:#526961;margin-top:10px}
+.tisa-carousel{width:min(100%,410px);margin:24px 0 26px}
+.tisa-photo{width:100%;aspect-ratio:180/170;background-image:url("../assets/tisa/seashells.webp");background-size:200% 200%;background-repeat:no-repeat}
+.tisa-photo[data-slide="0"]{background-position:left top}
+.tisa-photo[data-slide="1"]{background-position:right top}
+.tisa-photo[data-slide="2"]{background-position:left bottom}
+.tisa-photo[data-slide="3"]{background-position:right bottom}
+.tisa-carousel-controls{display:flex;align-items:center;gap:8px;margin-top:9px}
+.tisa-carousel-controls button{background:#d9ead3;color:#000;border:1px solid #899a83;border-radius:2px;padding:7px 12px;font:inherit;cursor:pointer}
 .tisa-carousel-controls button:hover{background:#c9dfc1}
 .tisa-carousel-controls button:focus-visible{outline:3px solid #19564f;outline-offset:3px}
-.tisa-carousel-status{font-size:14px}
+.tisa-carousel-status{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 </style>
 </head>
 <body><a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header"><div class="wrap"><nav class="nav" aria-label="Main navigation"><a href="../index.html">Home</a><a href="../index.html#majors">Majors</a><a href="../index.html#minors">Minors</a><a href="../index.html#micro-credentials">Micro-credentials</a><a href="../index.html#faculty">Faculty</a><a href="../index.html#other">Other</a></nav></div></header>
 <main id="main-content" tabindex="-1">
-<section class="inner-hero"><div class="wrap"><h1 class="page-title">Tech Innovation Summer Academy (TISA)</h1></div></section>
-<section class="wrap tisa-gallery" aria-labelledby="tisa-gallery-heading">
-<h2 id="tisa-gallery-heading">TISA in Pictures</h2>
-<p>This is a sample photo carousel using seashells. Individual TISA photographs will replace these placeholders.</p>
-<div class="tisa-carousel" aria-label="Photo carousel prototype">
-<figure><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Conch_shell.jpg?width=960" alt="A conch shell on a beach" loading="eager"><figcaption>Sample photograph: <a href="https://commons.wikimedia.org/wiki/File:Conch_shell.jpg" target="_blank" rel="noopener">Conch shell (Wikimedia Commons)</a></figcaption></figure>
-<figure hidden><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Scallop_Shell.png?width=960" alt="A scallop shell on beach sand" loading="lazy"><figcaption>Sample photograph: <a href="https://commons.wikimedia.org/wiki/File:Scallop_Shell.png" target="_blank" rel="noopener">Scallop shell (Wikimedia Commons)</a></figcaption></figure>
-<figure hidden><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Seashells_on_the_sea_shore.jpg?width=960" alt="Seashells on the shore" loading="lazy"><figcaption>Sample photograph: <a href="https://commons.wikimedia.org/wiki/File:Seashells_on_the_sea_shore.jpg" target="_blank" rel="noopener">Seashells on the sea shore (Wikimedia Commons)</a></figcaption></figure>
-<div class="tisa-carousel-controls"><button type="button" class="tisa-prev">Previous</button><span class="tisa-carousel-status" role="status" aria-live="polite">1 of 3</span><button type="button" class="tisa-next">Next</button></div>
-</div></section>
+<section class="wrap reading-width tisa-main">
+<h1>Tech Innovation Summer Academy (TISA)</h1>
+<p>TISA is a program designed specifically by the Ithaca College Computer Science faculty <a href="../faculty/toby-dragon.html">Toby Dragon</a> and <a href="../faculty/john-barr.html">John Barr</a> to help anyone and everyone get excited about technology. Rising high school sophomores, juniors, and seniors spend a week in a highly interactive learning environment to explore the ways in which technology is used across many disciplines. Ithaca College computer science faculty and current students guide hands-on activities to introduce a variety of technology-related subjects where computer programs interact with the real world, such as game development, robotics, website design, virtual reality, and artificial intelligence.</p>
+<p>Interested in joining us? Visit the <a href="https://www.ithaca.edu/tech-innovation-summer-academy">official TISA website</a> for information about upcoming sessions and how to apply. We hope to see you there.</p>
+<div class="tisa-carousel" aria-label="Photo slideshow" aria-roledescription="carousel">
+<div class="tisa-photo" role="img" aria-label="Seashells on sand" data-slide="0"></div>
+<div class="tisa-carousel-controls" role="group" aria-label="Photo controls">
+<button type="button" class="tisa-prev" aria-label="Previous photograph">&#10094;</button>
+<button type="button" class="tisa-pause" aria-label="Pause automatic slideshow">&#10074;&#10074;</button>
+<button type="button" class="tisa-next" aria-label="Next photograph">&#10095;</button>
+<span class="tisa-carousel-status" role="status" aria-live="polite">Photograph 1 of 4</span>
+</div>
+</div>
+<h2>In the Words of Past Participants</h2>
+<p>We asked students whether participating in TISA changed their views about technology or computer science. Here is what some of them said:</p>
+<ul class="tisa-quotes">
+<li>“Instead of being scared to code or uninterested, I was able to discover how fun technology and computer science topics could be, and find its relevance in all kinds of applications.”</li>
+<li>“It made me more interested in the communications field and game design.”</li>
+<li>“This class did change my outlook on technology because I now know more of how it works and more of the components within it.”</li>
+<li>“I didn't know I would be so interested. I loved learning about coding, AI, VR, and so much more.”</li>
+<li>“It made me think about all the processes put into making other devices and the different ways technology can be used.”</li>
+<li>“This program definitely gave me a new perspective on technology and computer science. I think that it is something I could see myself doing in the future as a career.”</li>
+</ul>
+<figure class="tisa-participant-map">
+<img src="../assets/tisa/participant-origins.webp" width="600" height="415" alt="Map showing locations across the Northeast and elsewhere in the United States from which TISA participants have attended." loading="lazy">
+<figcaption>Participants have come from across the region and the country.</figcaption>
+</figure>
+</section>
 </main>
 <script>
 (() => {
   const carousel = document.querySelector('.tisa-carousel');
-  const slides = Array.from(carousel.querySelectorAll('figure'));
+  if (!carousel) return;
+  const photo = carousel.querySelector('.tisa-photo');
   const status = carousel.querySelector('.tisa-carousel-status');
+  const pauseButton = carousel.querySelector('.tisa-pause');
+  const descriptions = ["Seashells on sand","A collection of colorful seashells","Seashells beside ocean foam","Seashells arranged in a basket"];
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let index = 0;
-  function show(next) {
-    index = (next + slides.length) % slides.length;
-    slides.forEach((slide, i) => { slide.hidden = i !== index; });
-    status.textContent = (index + 1) + ' of ' + slides.length;
+  let timer = null;
+  let paused = reducedMotion.matches;
+  function display(next) {
+    index = (next + descriptions.length) % descriptions.length;
+    photo.dataset.slide = String(index);
+    photo.setAttribute('aria-label', descriptions[index]);
+    status.textContent = 'Photograph ' + (index + 1) + ' of ' + descriptions.length;
   }
-  carousel.querySelector('.tisa-prev').addEventListener('click', () => show(index - 1));
-  carousel.querySelector('.tisa-next').addEventListener('click', () => show(index + 1));
+  function stop() {
+    if (timer !== null) window.clearInterval(timer);
+    timer = null;
+  }
+  function start() {
+    stop();
+    if (!paused && !document.hidden && !reducedMotion.matches) {
+      timer = window.setInterval(() => display(index + 1), 5000);
+    }
+  }
+  function updatePause() {
+    pauseButton.textContent = paused ? '▶' : '❚❚';
+    pauseButton.setAttribute('aria-label', paused ? 'Play automatic slideshow' : 'Pause automatic slideshow');
+  }
+  carousel.querySelector('.tisa-prev').addEventListener('click', () => { display(index - 1); start(); });
+  carousel.querySelector('.tisa-next').addEventListener('click', () => { display(index + 1); start(); });
+  pauseButton.addEventListener('click', () => { paused = !paused; updatePause(); start(); });
+  document.addEventListener('visibilitychange', start);
+  reducedMotion.addEventListener('change', () => { if (reducedMotion.matches) paused = true; updatePause(); start(); });
+  updatePause();
+  start();
 })();
 </script>
 
