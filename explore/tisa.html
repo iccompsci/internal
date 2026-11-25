@@ -26,10 +26,12 @@
 .tisa-photo[data-slide="1"]{background-position:right top}
 .tisa-photo[data-slide="2"]{background-position:left bottom}
 .tisa-photo[data-slide="3"]{background-position:right bottom}
-.tisa-carousel-controls{display:flex;align-items:center;gap:8px;margin-top:9px}
-.tisa-carousel-controls button{background:#d9ead3;color:#000;border:1px solid #899a83;border-radius:2px;padding:7px 12px;font:inherit;cursor:pointer}
-.tisa-carousel-controls button:hover{background:#c9dfc1}
+.tisa-carousel-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px}
+.tisa-carousel-controls button{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;border:1px solid #cbdad3;border-radius:50%;background:#faf9f5;color:#19564f;cursor:pointer;transition:background-color .15s ease,border-color .15s ease}
+.tisa-carousel-controls button:hover{background:#d9ead3;border-color:#899a83}
 .tisa-carousel-controls button:focus-visible{outline:3px solid #19564f;outline-offset:3px}
+.tisa-carousel-controls button svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.tisa-carousel-controls .tisa-pause svg{width:16px;height:16px}
 .tisa-carousel-status{position:absolute;width:1px;height:1px;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
 </style>
 </head>
@@ -43,14 +45,13 @@
 <div class="tisa-carousel" aria-label="Photo slideshow" aria-roledescription="carousel">
 <div class="tisa-photo" role="img" aria-label="Seashells on sand" data-slide="0"></div>
 <div class="tisa-carousel-controls" role="group" aria-label="Photo controls">
-<button type="button" class="tisa-prev" aria-label="Previous photograph">&#10094;</button>
-<button type="button" class="tisa-pause" aria-label="Pause automatic slideshow">&#10074;&#10074;</button>
-<button type="button" class="tisa-next" aria-label="Next photograph">&#10095;</button>
+<button type="button" class="tisa-prev" aria-label="Previous photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+<button type="button" class="tisa-pause" aria-label="Pause automatic slideshow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg></button>
+<button type="button" class="tisa-next" aria-label="Next photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
 <span class="tisa-carousel-status" role="status" aria-live="polite">Photograph 1 of 4</span>
 </div>
 </div>
 <h2>In the Words of Past Participants</h2>
-<p>We asked students whether participating in TISA changed their views about technology or computer science. Here is what some of them said:</p>
 <ul class="tisa-quotes">
 <li>“Instead of being scared to code or uninterested, I was able to discover how fun technology and computer science topics could be, and find its relevance in all kinds of applications.”</li>
 <li>“It made me more interested in the communications field and game design.”</li>
@@ -94,7 +95,9 @@
     }
   }
   function updatePause() {
-    pauseButton.textContent = paused ? '▶' : '❚❚';
+    pauseButton.innerHTML = paused
+      ? '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z"/></svg>'
+      : '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg>';
     pauseButton.setAttribute('aria-label', paused ? 'Play automatic slideshow' : 'Pause automatic slideshow');
   }
   carousel.querySelector('.tisa-prev').addEventListener('click', () => { display(index - 1); start(); });
