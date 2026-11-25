@@ -1,34 +1,71 @@
-/* Minimal, consistently left-aligned faculty profiles. */
+/* Shared faculty-page layout. */
 .faculty-page.wrap {
-  /* Match the homepage's broad composition rather than a centered column. */
   width: 92%;
   max-width: none;
   margin-inline: auto;
-  padding-top: 32px;
-  padding-bottom: 30px;
+  padding: 32px 0 30px;
 }
-.faculty-page .page-title {
-  margin: 0 0 22px;
-}
+.faculty-page { text-align: left; text-indent: 0; }
+.faculty-page .page-title { margin: 0 0 22px; text-align: left; text-indent: 0; }
 .faculty-page p {
   max-width: 1120px;
   margin: 0 0 18px;
   line-height: 1.75;
+  text-align: left;
+  text-indent: 0;
 }
+.faculty-page .faculty-teaching {
+  margin: 16px 0 28px;
+  text-align: left;
+  text-indent: 0;
+}
+.faculty-page .faculty-return { margin: 34px 0 0; }
+
+/* Portraits and biographies share one layout. */
+.faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) {
+  display: flow-root;
+}
+.faculty-page .faculty-portrait,
+.faculty-page .faculty-headshot {
+  display: block;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  object-position: center 25%;
+  border: 1px solid #7b8980;
+}
+.faculty-page .faculty-portrait { float: left; margin: 0 24px 12px 0; }
+.faculty-page .faculty-headshot { margin: 0 0 22px; }
+.faculty-page .john-narrative .faculty-portrait { object-position: center 30%; }
+.faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) p {
+  max-width: none;
+  text-align: left !important;
+  text-align-last: auto;
+  word-spacing: normal;
+}
+
+/* One list format for every faculty profile; the tag sets bullets or numbers. */
 .faculty-page .faculty-projects {
-  list-style: none;
-  padding: 0;
+  display: flow-root;
+  padding-left: 2em;
   margin: 0 0 18px;
   max-width: 1120px;
+  text-align: left;
+  text-indent: 0;
 }
+.faculty-page ul.faculty-projects { list-style: disc outside; }
+.faculty-page ol.faculty-projects { list-style: decimal outside; }
 .faculty-page .faculty-projects li {
-  margin: 0 0 13px;
+  display: list-item;
+  margin: 0 0 10px;
   padding: 0;
   text-align: left;
+  text-indent: 0;
 }
-.faculty-page .faculty-diagram-intro {
-  margin: 30px 0 16px;
-}
+.faculty-page .faculty-projects li::before { content: none; }
+
+/* Diagram legend, where used. */
+.faculty-page .faculty-diagram-intro { margin: 30px 0 16px; }
 .faculty-diagram-intro .faculty-color-key {
   white-space: nowrap;
   display: inline-flex;
@@ -44,72 +81,20 @@
 }
 .faculty-diagram-intro .faculty-color-key .regular { background: #899a83; }
 .faculty-diagram-intro .faculty-color-key .past { background: #d9ead3; }
-.faculty-page .faculty-teaching {
-  margin: 16px 0 28px;
+
+@media (max-width: 700px) {
+  .faculty-page .faculty-portrait {
+    float: none;
+    margin: 0 0 18px;
+  }
 }
-.faculty-page .faculty-return { margin: 34px 0 0; }
-@media(max-width:650px) {
+@media (max-width: 650px) {
   .faculty-page.wrap { width: calc(100% - 36px); padding-top: 30px; }
   .faculty-page .page-title { margin-bottom: 16px; }
 }
-
-/* Align every faculty name, paragraph, list item and diagram to the same edge. */
-.faculty-page,
-.faculty-page .page-title,
-.faculty-page p,
-.faculty-page .faculty-projects,
-.faculty-page .faculty-projects li,
-.faculty-page .faculty-teaching {
-  text-align: left;
-  text-indent: 0;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-/* Individual faculty photographs for profiles awaiting narrative copy. */
-.faculty-page .faculty-headshot { display: block; width: 180px; height: 180px; object-fit: cover; object-position: center 25%; border: 1px solid #7b8980; margin: 0 0 22px; }
-@media(max-width:600px) { .faculty-page .faculty-headshot { width: 118px; height: 118px; } }
-
-/* Faculty biographies should have a natural ragged right edge. */
-.faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) p {
-  text-align: left !important;
-  text-align-last: auto;
-  word-spacing: normal;
-}
-
-/* Avoid a narrow text strip beside the portrait on phones. */
-@media (max-width: 700px) {
-  .faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) .faculty-portrait {
-    float: none !important;
-    display: block;
-    margin: 0 0 18px 0 !important;
-  }
-}
-
-/* Shared portrait-and-narrative layout. Portrait position and list type remain per faculty. */
-.faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) { display: flow-root; }
-.faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) .faculty-portrait {
-  float: left; display: block; width: 180px; height: 180px; object-fit: cover;
-  object-position: center 25%; border: 1px solid #7b8980; margin: 0 24px 12px 0;
-}
-.faculty-page .john-narrative .faculty-portrait { object-position: center 30%; }
-.faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) p { max-width: none; text-align: left; }
-.faculty-page .john-narrative ul.faculty-projects,
-.faculty-page .toby-narrative ul.faculty-projects,
-.faculty-page .doug-narrative ol.faculty-projects {
-  display: flow-root; padding-left: 2em; margin: 0 0 18px; max-width: 1120px;
-}
-.faculty-page :is(.john-narrative, .toby-narrative) ul.faculty-projects { list-style: disc outside; }
-.faculty-page .doug-narrative ol.faculty-projects { list-style: decimal outside; }
-.faculty-page :is(.john-narrative ul.faculty-projects, .toby-narrative ul.faculty-projects, .doug-narrative ol.faculty-projects) li {
-  display: list-item; padding: 0; margin: 0 0 10px; text-indent: 0; text-align: left;
-}
-.faculty-page :is(.john-narrative, .toby-narrative) ul.faculty-projects li { list-style: disc outside; }
-.faculty-page .doug-narrative ol.faculty-projects li { list-style: decimal outside; }
-.faculty-page :is(.john-narrative ul.faculty-projects, .toby-narrative ul.faculty-projects, .doug-narrative ol.faculty-projects) li::before { content: none; }
-.faculty-page :is(.john-narrative ul.faculty-projects, .toby-narrative ul.faculty-projects, .doug-narrative ol.faculty-projects) li .project-copy { display: inline; }
 @media (max-width: 600px) {
-  .faculty-page :is(.ali-narrative, .john-narrative, .doug-narrative, .toby-narrative) .faculty-portrait {
-    width: 118px; height: 118px; margin: 0 14px 10px 0;
+  .faculty-page :is(.faculty-portrait, .faculty-headshot) {
+    width: 118px;
+    height: 118px;
   }
 }
