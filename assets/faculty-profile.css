@@ -46,7 +46,7 @@
 
 /* One list format for every faculty profile; the tag sets bullets or numbers. */
 .faculty-page .faculty-projects {
-  display: flow-root;
+  display: block;
   padding-left: 2em;
   margin: 0 0 18px;
   max-width: 1120px;
