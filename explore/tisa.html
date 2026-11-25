@@ -20,9 +20,10 @@
 .tisa-participant-map{margin:26px 0 0}
 .tisa-participant-map img{display:block;width:min(100%,1263px);height:auto;border:0}
 .tisa-participant-map figcaption{font-size:15px;color:#526961;margin-top:10px}
-/* Original images remain at their native pixel dimensions; object-fit avoids cropping. */
+/* Lock the displayed slide frame to 2:1 even when source photos have other proportions. */
 .tisa-carousel{width:100%;max-width:850px;margin:24px 0 26px}
-.tisa-photo{display:block;width:100%;aspect-ratio:2/1;object-fit:cover;background:transparent}
+.tisa-photo-frame{position:relative;width:100%;aspect-ratio:2/1;overflow:hidden}
+.tisa-photo-frame .tisa-photo{position:absolute;inset:0;display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:center;background:transparent}
 .tisa-carousel-controls{display:flex;align-items:center;justify-content:center;gap:10px;margin-top:14px}
 .tisa-carousel-controls button{display:inline-flex;align-items:center;justify-content:center;width:42px;height:42px;padding:0;border:1px solid #cbdad3;border-radius:50%;background:#faf9f5;color:#19564f;cursor:pointer;transition:background-color .15s ease,border-color .15s ease}
 .tisa-carousel-controls button:hover{background:#d9ead3;border-color:#899a83}
@@ -40,7 +41,9 @@
 <p>TISA is a program designed specifically by the Ithaca College Computer Science faculty <a href="../faculty/toby-dragon.html">Toby Dragon</a> and <a href="../faculty/john-barr.html">John Barr</a> to help anyone and everyone get excited about technology. Rising high school sophomores, juniors, and seniors spend a week in a highly interactive learning environment to explore the ways in which technology is used across many disciplines. Ithaca College computer science faculty and current students guide hands-on activities to introduce a variety of technology-related subjects where computer programs interact with the real world, such as game development, robotics, website design, virtual reality, and artificial intelligence.</p>
 <p>Interested in joining us? Visit the <a href="https://www.ithaca.edu/tech-innovation-summer-academy">official TISA website</a> for information about upcoming sessions and how to apply. We hope to see you there.</p>
 <div class="tisa-carousel" aria-label="Photo slideshow" aria-roledescription="carousel">
+<div class="tisa-photo-frame">
 <img class="tisa-photo" src="../assets/tisa/photos/tisa-01-0391.jpg" alt="Students playing games together in the Ithaca College esports lounge" width="2048" height="1024" decoding="async">
+</div>
 <div class="tisa-carousel-controls" role="group" aria-label="Photo controls">
 <button type="button" class="tisa-prev" aria-label="Previous photograph"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
 <button type="button" class="tisa-pause" aria-label="Pause automatic slideshow"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14"/></svg></button>
