@@ -20,7 +20,7 @@
    would otherwise override a simple display:none on mobile. */
 .interactive-curriculum > svg.landscape-diagram,
 .faculty-teaching > svg.landscape-diagram { display: none !important; }
-@media (min-width: 1400px) {
+@media (min-width: 1100px) {
   .interactive-curriculum.landscape-ready,
   .faculty-teaching.landscape-ready { width: 100%; max-width: 1273px; }
   .cs-curriculum .diagram-frame:has(.landscape-ready) { max-width: none; }
