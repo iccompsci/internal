@@ -26,3 +26,6 @@
 .interactive-prereq-dialog li{margin:4px 0}
 .interactive-prereq-close{float:right;background:transparent;border:0;cursor:pointer;font-size:30px;line-height:1;color:#335d42}
 @media(max-width:650px){.interactive-curriculum svg{display:block}.interactive-mobile-map{display:block}.interactive-prereq-dialog{padding:20px}.interactive-prereq-dialog h2{font-size:25px}}
+
+/* Subtle inline highlight for the instruction preceding interactive diagrams. */
+.diagram-instruction{background:#e8f0e5;color:#304c39;border-radius:3px;padding:2px 5px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
