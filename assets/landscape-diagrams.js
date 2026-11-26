@@ -34,7 +34,15 @@
     background.setAttribute('fill','#faf9f5');
     background.setAttribute('stroke','none');
     root.append(background);
-    for (const [key,d,arrow,color,dashes] of layout.edges) {
+    // Preserve each diagram's original prerequisite emphasis, not the
+    // historical colors baked into the landscape coordinate template.
+    const sourceEdges = new Map([...original.querySelectorAll('g.edge')].map(edge => [
+      edge.querySelector(':scope > title')?.textContent.trim(), edge.querySelector('path')
+    ]));
+    for (const [key,d,arrow,defaultColor,defaultDashes] of layout.edges) {
+      const sourcePath = sourceEdges.get(key);
+      const color = sourcePath ? sourcePath.getAttribute('stroke') : defaultColor;
+      const dashes = sourcePath ? sourcePath.getAttribute('stroke-dasharray') : defaultDashes;
       const group=make('g');group.classList.add('edge');
       group.setAttribute('aria-hidden','true');
       const title=make('title'); title.textContent=key;group.append(title);
