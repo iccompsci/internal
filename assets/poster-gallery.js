@@ -28,7 +28,7 @@ if (dialog && image && viewer && title && original && typeof dialog.showModal ==
       title.textContent = card?.querySelector('h2')?.textContent || 'Research poster';
       original.href = link.href;
       textLink.href = 'poster-text/' + link.href.split('/').pop().replace(/\.pdf(?:\?.*)?$/i, '.html');
-      image.src = thumb.src.replace(/\/posters\/([^/]+)\.(?:jpe?g|png)$/i, '/posters/full/$1.jpg');
+      image.src = thumb.src;
       image.alt = `Enlarged poster: ${title.textContent}`;
       viewer.classList.remove('is-zoomed');
       zoomButton.setAttribute('aria-pressed', 'false');
