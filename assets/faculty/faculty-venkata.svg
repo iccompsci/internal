@@ -60,14 +60,14 @@
 <g id="node7" class="node">
 <title>CS1</title>
 <polygon fill="#899a83" stroke="#899a83" points="93.25,-470.5 13.5,-470.5 13.5,-429.5 93.25,-429.5 93.25,-470.5"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-451.3" font-family="Times" font-size="15.00">Foundations</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-451.3" font-family="Times" font-size="15.00" textLength="68" lengthAdjust="spacingAndGlyphs">Foundations</text>
 <text xml:space="preserve" text-anchor="middle" x="53.38" y="-434.8" font-family="Times" font-size="16.00">of CS I</text>
 </g>
 <!-- CS2 -->
 <g id="node8" class="node">
 <title>CS2</title>
 <polygon fill="none" stroke="gray" points="222.85,-470.5 143.1,-470.5 143.1,-429.5 222.85,-429.5 222.85,-470.5"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-451.3" font-family="Times" font-size="15.00">Foundations</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-451.3" font-family="Times" font-size="15.00" textLength="68" lengthAdjust="spacingAndGlyphs">Foundations</text>
 <text xml:space="preserve" text-anchor="middle" x="182.97" y="-434.8" font-family="Times" font-size="16.00">of CS II</text>
 </g>
 <!-- CS1&#45;&gt;CS2 -->
