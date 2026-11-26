@@ -1,16 +1,7 @@
 .interactive-curriculum{width:100%;max-width:629px;min-height:120px}
-/* Portrait SVG viewBoxes are 629 units wide: never enlarge beyond 1 CSS pixel/unit. */
+/* Canonical portrait SVG viewBoxes are 629 units wide. */
 .interactive-curriculum svg{display:block;width:100%;max-width:629px;height:auto;background:#faf9f5}
-/* App and ML use a portrait diagram on narrow screens and a wide
-   diagram when the desktop paper layout starts. */
-.interactive-curriculum.wide-curriculum{display:none}
-@media(min-width:1100px){
-  .interactive-curriculum.narrow-curriculum{display:none}
-  .interactive-curriculum.wide-curriculum{display:block;max-width:1273px}
-  .interactive-curriculum.wide-curriculum > svg{width:100%;max-width:1273px;height:auto}
-  .cs-curriculum .diagram-frame:has(.wide-curriculum){max-width:none}
-}
-.interactive-curriculum svg text{font-family:'Times New Roman',Times,serif!important;font-size:15px;font-weight:400!important;letter-spacing:0}
+.interactive-curriculum svg text{font-family:'Times New Roman',Times,serif!important;font-weight:400!important;letter-spacing:0}
 .interactive-curriculum .interactive-course{cursor:pointer;outline:none}
 .interactive-curriculum .interactive-course:hover polygon,
 .interactive-curriculum .interactive-course:focus-visible polygon{stroke:#2b6a3e!important;stroke-width:3.4!important}
