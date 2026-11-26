@@ -38,7 +38,10 @@ body:not(:has(.poster-gallery, .poster-transcript)) main.reasons-content {
   margin-right: auto !important;
 }
 
-/* Keep non-prose layouts free to use their available width. */
+/* The paper's inner gutters determine prose width, not individual limits. */
+main :is(p, blockquote) {
+  max-width: none !important;
+}
 body:not(:has(.poster-gallery, .poster-transcript)) main :is(
   figcaption, .reading-width, .cs-opening-copy, .section-heading,
   .section-heading > div, .page-title, .reasons-content
