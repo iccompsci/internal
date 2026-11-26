@@ -1,13 +1,7 @@
 .skip-link{position:absolute;z-index:1000;top:8px;left:12px;transform:translateY(-160%);background:#faf9f5;color:#19564f;border:2px solid #19564f;padding:10px 15px;font-weight:700;text-decoration:none}
 .skip-link:focus{transform:translateY(0)}
 .crumbs,.site-note,.map-caption{color:#526961}
-.card .index{color:#47796e}
 .interactive-caption{color:#526961}
 .poster-copy a[href*="poster-text/"]{display:inline-block;margin:6px 0 0 15px;font-size:13px;font-weight:700;color:#19564f}
 .poster-copy a[href*="poster-text/"]:focus-visible{outline:3px solid #19564f;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
-/* Typography trial: narrative copy in Times Roman, retaining established headings. */
-main p, main li,
-.interactive-prereq-dialog p, .interactive-prereq-dialog li {
-  font-family: 'Times New Roman', Times, serif;
-}
