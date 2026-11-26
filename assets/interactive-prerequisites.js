@@ -92,7 +92,7 @@
       mobileSummary.textContent = 'Browse courses as a list';
       const mobileNote = document.createElement('p');
       mobileNote.className = 'mobile-diagram-note';
-      mobileNote.textContent = 'Courses and their immediate prerequisites. Select a course to read its full description and related courses.';
+      mobileNote.textContent = 'Courses and their immediate prerequisites.';
       const mobileList = document.createElement('ul');
       mobile.append(mobileSummary, mobileNote, mobileList);
       let count = 0;
