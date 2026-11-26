@@ -1,4 +1,4 @@
-/* Circular ICCS network image, using a nondestructive CSS crop. */
+/* Homepage layout and navigation cards. */
 .hero h1 {
   font-size: clamp(42px, 4.75vw, 68px);
   line-height: 1.14;
@@ -28,7 +28,6 @@
   font-weight: 600;
   line-height: 1.25;
 }
-.card .arrow { margin-top: 0; align-self: center; }
 @media (max-width: 520px) {
   .cards { gap: 8px; }
   .card { min-height: 54px; padding: 12px 14px; }
@@ -74,22 +73,6 @@
   .faculty-strip { margin-top: 0; margin-bottom: 25px; }
 }
 
-.hero-art-network {
-  background: var(--cream);
-  padding: 8px;
-  overflow: hidden;
-}
-
-.hero-art-network img {
-  display: block;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 420px;
-  object-fit: contain;
-  margin-inline: auto;
-}
-
 /* One quiet illustration behind the introduction and faculty collage. */
 .landing-intro {
   /* A single, uninterrupted backdrop behind both text and transparent portraits. */
@@ -101,10 +84,8 @@
   background-repeat: no-repeat;
 }
 .hero { display: block; padding: 60px 36px 42px; min-height: 0; }
-.hero::before { content: none; }
 .hero > div:first-child { max-width: 100%; }
 .hero p { max-width: 900px; }
-.hero-art-network { display: none; }
 /* Let the transparent portraits sit directly on the shared background.
    No strip padding or margin below them: the backdrop ends with the portraits. */
 .landing-intro .faculty-strip {
@@ -156,11 +137,6 @@
 
 @media (max-width: 800px) {
   .hero { padding: 42px 16px 46px; min-height: 0; }
-}
-
-@media (max-width: 800px) {
-  .hero-art-network { height: auto; min-height: 330px; }
-  .hero-art-network img { max-height: 330px; }
 }
 
 /* On phones, preserve the typographic hierarchy without an oversized hero. */
