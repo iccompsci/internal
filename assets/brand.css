@@ -133,7 +133,7 @@
 .group:is(#faculty, #explore) { padding-top: 25px; padding-bottom: 25px; }
 /* Separate faculty from the remaining links within the existing section gap. */
 .group#faculty { padding-bottom: 16px; }
-.group#explore { padding-top: 16px; }
+.group#explore { border: 0 !important; padding-top: 16px; }
 .group#explore .explore-intro { margin: 0 0 18px; }
 
 @media (max-width: 800px) {
