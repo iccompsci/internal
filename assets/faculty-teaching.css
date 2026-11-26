@@ -11,6 +11,11 @@
   height: auto;
   background: transparent;
 }
+/* Shared 629-unit Graphviz geometry, matching curriculum diagrams. */
+.faculty-teaching.standard-geometry,
+.faculty-teaching.standard-geometry svg {
+  max-width: 629px;
+}
 .faculty-teaching svg text {
   font-family: 'Times New Roman', Times, serif !important;
   font-weight: 400 !important;
