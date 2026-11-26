@@ -1,6 +1,10 @@
 .interactive-curriculum{width:100%;max-width:629px;min-height:120px}
 /* Portrait SVG viewBoxes are 629 units wide: never enlarge beyond 1 CSS pixel/unit. */
 .interactive-curriculum svg{display:block;width:100%;max-width:629px;height:auto;background:#faf9f5}
+/* A single wide prerequisite map can scroll on narrow screens without
+   changing its course positions or reducing labels to phone-scale text. */
+.interactive-curriculum.wide-curriculum{max-width:1273px;overflow-x:auto}
+.interactive-curriculum.wide-curriculum > svg{max-width:1273px;width:100%;min-width:900px}
 .interactive-curriculum svg text{font-family:'Times New Roman',Times,serif!important;font-size:15px;font-weight:400!important;letter-spacing:0}
 .interactive-curriculum .interactive-course{cursor:pointer;outline:none}
 .interactive-curriculum .interactive-course:hover polygon,
