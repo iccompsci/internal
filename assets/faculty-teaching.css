@@ -40,5 +40,3 @@
   .faculty-teaching .interactive-mobile-map { display: block; }
 }
 
-/* Match the same uniform mobile label size as curriculum diagrams. */
-@media(max-width:650px){.faculty-teaching svg g.node text{font-size:13px!important}}
