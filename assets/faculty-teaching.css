@@ -1,20 +1,15 @@
 .faculty-teaching {
   width: 100%;
-  max-width: 574px;
+  max-width: 629px;
   min-height: 120px;
   margin: 18px auto 28px;
 }
 .faculty-teaching svg {
   display: block;
   width: 100%;
-  max-width: 574px;
+  max-width: 629px;
   height: auto;
   background: transparent;
-}
-/* Shared 629-unit Graphviz geometry, matching curriculum diagrams. */
-.faculty-teaching.standard-geometry,
-.faculty-teaching.standard-geometry svg {
-  max-width: 629px;
 }
 .faculty-teaching svg text {
   font-family: 'Times New Roman', Times, serif !important;
