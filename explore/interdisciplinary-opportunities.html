@@ -28,7 +28,7 @@
     .opportunities thead a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
     .opportunities tbody th[scope="row"] { text-align: right; font-weight: normal; }
     .opportunities tbody td { text-align: center; width: auto; }
-    .opportunities .school-row th { text-align: left; padding: 11px 12px 6px; background: #eef4ef; font-weight: bold; border-top: 1px solid #cbdad3; }
+    .opportunities .school-row th { text-align: center; padding: 11px 12px 6px; background: #eef4ef; font-weight: bold; border-top: 1px solid #cbdad3; }
     .opportunities .relevance-mark { display: inline-block; min-width: 1.6em; padding: 1px 2px; border-radius: 3px; color: #19564f; text-decoration: underline; text-decoration-color: #90a99d; text-underline-offset: 4px; }
     .opportunities .relevance-mark.strong { font-weight: 900; transform: scale(1.12); }
     .opportunities .relevance-mark.moderate { font-weight: 400; }
@@ -54,7 +54,7 @@
       .opportunities th, .opportunities td { padding: 7px 4px; }
       .opportunities thead th { font-size: 13px; line-height: 1.2; }
       .opportunities tbody th[scope="row"] { font-size: 14px; line-height: 1.25; }
-      .opportunities .school-row th { text-align: left; }
+      .opportunities .school-row th { text-align: center; }
       .opportunities .detail-count { display: block; margin-left: 0; font-size: .9em; }
     }
   </style>
@@ -69,7 +69,7 @@
       <div class="legend" aria-label="Relevance key">
         <span><strong class="strong-mark">✔</strong> Strong connection</span>
         <span><strong class="moderate-mark">✓</strong> Moderate connection</span>
-        <span><strong>—</strong> No highlighted connection</span>
+        
       </div>
       <div class="table-scroll" role="region" aria-label="Computing minor and major relevance table" tabindex="0">
         <table>
@@ -86,16 +86,16 @@
                 <td><a class="relevance-mark strong" href="#explain-applied-physics-ml" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Machine Learning. Read explanation.">✔</a></td>
               </tr>
               <tr><th scope="row">Education Studies</th>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark strong" href="#explain-education-studies-ad" data-expand="education-studies" aria-label="Strong connection: Education Studies and App Development. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Environmental Science</th>
                 <td><a class="relevance-mark strong" href="#explain-environmental-science-dc" data-expand="environmental-science" aria-label="Strong connection: Environmental Science and Data-Centric Computing. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Physics</th>
                 <td><a class="relevance-mark strong" href="#explain-physics-dc" data-expand="physics" aria-label="Strong connection: Physics and Data-Centric Computing. Read explanation.">✔</a></td>
@@ -111,108 +111,108 @@
               </tr>
               <tr><th scope="row">Politics</th>
                 <td><a class="relevance-mark moderate" href="#explain-politics-dc" data-expand="politics" aria-label="Moderate connection: Politics and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Psychology</th>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark moderate" href="#explain-psychology-ad" data-expand="psychology" aria-label="Moderate connection: Psychology and App Development. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Sociology</th>
                 <td><a class="relevance-mark moderate" href="#explain-sociology-dc" data-expand="sociology" aria-label="Moderate connection: Sociology and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr class="school-row"><th scope="rowgroup" colspan="5">Business</th></tr>
               <tr><th scope="row">Accounting</th>
                 <td><a class="relevance-mark moderate" href="#explain-accounting-dc" data-expand="accounting" aria-label="Moderate connection: Accounting and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Business Analytics</th>
                 <td><a class="relevance-mark strong" href="#explain-business-analytics-dc" data-expand="business-analytics" aria-label="Strong connection: Business Analytics and Data-Centric Computing. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark moderate" href="#explain-business-analytics-ml" data-expand="business-analytics" aria-label="Moderate connection: Business Analytics and Machine Learning. Read explanation.">✓</a></td>
               </tr>
               <tr><th scope="row">Finance</th>
                 <td><a class="relevance-mark moderate" href="#explain-finance-dc" data-expand="finance" aria-label="Moderate connection: Finance and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Marketing</th>
                 <td><a class="relevance-mark moderate" href="#explain-marketing-dc" data-expand="marketing" aria-label="Moderate connection: Marketing and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark moderate" href="#explain-marketing-ad" data-expand="marketing" aria-label="Moderate connection: Marketing and App Development. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Sport Management</th>
                 <td><a class="relevance-mark moderate" href="#explain-sport-management-dc" data-expand="sport-management" aria-label="Moderate connection: Sport Management and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Creative Industries</th>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark strong" href="#explain-creative-industries-ad" data-expand="creative-industries" aria-label="Strong connection: Creative Industries and App Development. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr class="school-row"><th scope="rowgroup" colspan="5">Communications</th></tr>
               <tr><th scope="row">Journalism</th>
                 <td><a class="relevance-mark strong" href="#explain-journalism-dc" data-expand="journalism" aria-label="Strong connection: Journalism and Data-Centric Computing. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark moderate" href="#explain-journalism-ad" data-expand="journalism" aria-label="Moderate connection: Journalism and App Development. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Writing for FT&amp;EM</th>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark strong" href="#explain-writing-for-ft-em-ad" data-expand="writing-for-ft-em" aria-label="Strong connection: Writing for FT&amp;EM and App Development. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr class="school-row"><th scope="rowgroup" colspan="5">Health Sciences &amp; Human Performance</th></tr>
               <tr><th scope="row">Exercise Science</th>
                 <td><a class="relevance-mark moderate" href="#explain-exercise-science-dc" data-expand="exercise-science" aria-label="Moderate connection: Exercise Science and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Public and Community Health</th>
                 <td><a class="relevance-mark strong" href="#explain-public-and-community-health-dc" data-expand="public-and-community-health" aria-label="Strong connection: Public and Community Health and Data-Centric Computing. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr class="school-row"><th scope="rowgroup" colspan="5">Music, Theatre &amp; Dance</th></tr>
               <tr><th scope="row">Music Composition</th>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark moderate" href="#explain-music-composition-ad" data-expand="music-composition" aria-label="Moderate connection: Music Composition and App Development. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Sound Recording Technology</th>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark strong" href="#explain-sound-recording-technology-cs" data-expand="sound-recording-technology" aria-label="Strong connection: Sound Recording Technology and Computer Systems. Read explanation.">✔</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
               <tr><th scope="row">Integrative Performing Arts Studies</th>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td><a class="relevance-mark moderate" href="#explain-integrative-performing-arts-studies-ad" data-expand="integrative-performing-arts-studies" aria-label="Moderate connection: Integrative Performing Arts Studies and App Development. Read explanation.">✓</a></td>
-                <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
+                <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
           </tbody>
         </table>
       </div>
-      <p class="table-note">These connections are preliminary judgments about how coursework in each minor may complement a major; they are not measured student outcomes. A dash does not mean the minor is unsuitable for students in that major.</p>
+      <p class="table-note">These connections are preliminary judgments about how coursework in each minor may complement a major; they are not measured student outcomes. A blank cell does not mean the minor is unsuitable for students in that major.</p>
       <h2 id="why-connections">Why these combinations may work</h2>
       <p class="explainer">Open a major below to explore how each highlighted computing minor could be applied in that field. These examples illustrate possible academic and professional connections; they do not represent formal course equivalencies or individualized degree planning advice.</p>
         <details class="major-details" id="major-applied-physics">
