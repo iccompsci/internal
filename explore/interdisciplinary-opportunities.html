@@ -18,16 +18,20 @@
     .opportunities .legend { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 20px 0 14px; }
     .opportunities .legend span { display: inline-block; }
     .opportunities .legend strong { color: #19564f; }
+    .opportunities .legend .strong-mark { font-weight: 900; font-size: 1.2em; }
+    .opportunities .legend .moderate-mark { font-weight: 400; }
     .opportunities .table-scroll { overflow-x: auto; border: 1px solid #cbdad3; background: #fff; border-radius: 4px; }
-    .opportunities table { border-collapse: collapse; width: 100%; min-width: 710px; line-height: 1.4; }
-    .opportunities th, .opportunities td { padding: 10px 12px; border-bottom: 1px solid #e1e8e2; }
+    .opportunities table { border-collapse: collapse; width: max-content; max-width: none; min-width: 0; table-layout: auto; line-height: 1.35; }
+    .opportunities th, .opportunities td { padding: 8px 5px; border-bottom: 1px solid #e1e8e2; }
     .opportunities thead th { background: #e5f0ea; font-weight: bold; vertical-align: bottom; text-align: center; }
-    .opportunities thead th:first-child { text-align: left; width: 37%; }
+    .opportunities thead th:first-child { text-align: right; width: auto; }
     .opportunities thead a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
-    .opportunities tbody th[scope="row"] { text-align: left; font-weight: normal; }
-    .opportunities tbody td { text-align: center; width: 15.75%; }
+    .opportunities tbody th[scope="row"] { text-align: right; font-weight: normal; }
+    .opportunities tbody td { text-align: center; width: auto; }
     .opportunities .school-row th { text-align: left; padding: 11px 12px 6px; background: #eef4ef; font-weight: bold; border-top: 1px solid #cbdad3; }
-    .opportunities .relevance-mark { display: inline-block; min-width: 45px; padding: 0 6px; border-radius: 3px; color: #19564f; font-weight: bold; text-decoration: underline; text-decoration-color: #90a99d; text-underline-offset: 4px; }
+    .opportunities .relevance-mark { display: inline-block; min-width: 1.6em; padding: 1px 2px; border-radius: 3px; color: #19564f; text-decoration: underline; text-decoration-color: #90a99d; text-underline-offset: 4px; }
+    .opportunities .relevance-mark.strong { font-weight: 900; transform: scale(1.12); }
+    .opportunities .relevance-mark.moderate { font-weight: 400; }
     .opportunities .relevance-mark:hover, .opportunities .relevance-mark:focus-visible { background: #e5f0ea; }
     .opportunities .no-highlight { color: #73837b; }
     .opportunities .table-note { color: #536767; margin-top: 12px; }
@@ -56,10 +60,10 @@
   <main id="main-content" tabindex="-1">
     <section class="wrap opportunities" aria-labelledby="opportunity-heading">
       <h1 id="opportunity-heading" class="page-title">Interdisciplinary Opportunities</h1>
-      <p class="explainer">Computing skills can strengthen work across the arts, sciences, health professions, business, and communications. The table highlights potential curricular connections between four Computer Science minors and selected Ithaca College majors. A checkmark means that the minor offers a meaningful complement to the major; two checkmarks indicate a particularly strong connection under our preliminary assessment. Select any checkmark to read a short explanation of the connection.</p>
+      <p class="explainer">Computing skills can strengthen work across the arts, sciences, health professions, business, and communications. The table highlights potential curricular connections between four Computer Science minors and selected Ithaca College majors. A lighter checkmark indicates a meaningful connection; a heavier checkmark indicates a particularly strong connection under our preliminary assessment. Select any checkmark to read a short explanation of the connection.</p>
       <div class="legend" aria-label="Relevance key">
-        <span><strong>✓✓</strong> Strong connection</span>
-        <span><strong>✓</strong> Moderate connection</span>
+        <span><strong class="strong-mark">✔</strong> Strong connection</span>
+        <span><strong class="moderate-mark">✓</strong> Moderate connection</span>
         <span><strong>—</strong> No highlighted connection</span>
       </div>
       <div class="table-scroll" role="region" aria-label="Computing minor and major relevance table" tabindex="0">
@@ -71,32 +75,32 @@
           <tbody>
               <tr class="school-row"><th scope="rowgroup" colspan="5">Humanities &amp; Sciences</th></tr>
               <tr><th scope="row">Applied Physics</th>
-                <td><a class="relevance-mark strong" href="#explain-applied-physics-dc" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Data-Centric Computing. Read explanation.">✓✓</a></td>
-                <td><a class="relevance-mark strong" href="#explain-applied-physics-cs" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Computer Systems. Read explanation.">✓✓</a></td>
-                <td><a class="relevance-mark strong" href="#explain-applied-physics-ad" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and App Development. Read explanation.">✓✓</a></td>
-                <td><a class="relevance-mark strong" href="#explain-applied-physics-ml" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Machine Learning. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-applied-physics-dc" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Data-Centric Computing. Read explanation.">✔</a></td>
+                <td><a class="relevance-mark strong" href="#explain-applied-physics-cs" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Computer Systems. Read explanation.">✔</a></td>
+                <td><a class="relevance-mark strong" href="#explain-applied-physics-ad" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and App Development. Read explanation.">✔</a></td>
+                <td><a class="relevance-mark strong" href="#explain-applied-physics-ml" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Machine Learning. Read explanation.">✔</a></td>
               </tr>
               <tr><th scope="row">Education Studies</th>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td><a class="relevance-mark strong" href="#explain-education-studies-ad" data-expand="education-studies" aria-label="Strong connection: Education Studies and App Development. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-education-studies-ad" data-expand="education-studies" aria-label="Strong connection: Education Studies and App Development. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
               </tr>
               <tr><th scope="row">Environmental Science</th>
-                <td><a class="relevance-mark strong" href="#explain-environmental-science-dc" data-expand="environmental-science" aria-label="Strong connection: Environmental Science and Data-Centric Computing. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-environmental-science-dc" data-expand="environmental-science" aria-label="Strong connection: Environmental Science and Data-Centric Computing. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
               </tr>
               <tr><th scope="row">Physics</th>
-                <td><a class="relevance-mark strong" href="#explain-physics-dc" data-expand="physics" aria-label="Strong connection: Physics and Data-Centric Computing. Read explanation.">✓✓</a></td>
-                <td><a class="relevance-mark strong" href="#explain-physics-cs" data-expand="physics" aria-label="Strong connection: Physics and Computer Systems. Read explanation.">✓✓</a></td>
-                <td><a class="relevance-mark strong" href="#explain-physics-ad" data-expand="physics" aria-label="Strong connection: Physics and App Development. Read explanation.">✓✓</a></td>
-                <td><a class="relevance-mark strong" href="#explain-physics-ml" data-expand="physics" aria-label="Strong connection: Physics and Machine Learning. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-physics-dc" data-expand="physics" aria-label="Strong connection: Physics and Data-Centric Computing. Read explanation.">✔</a></td>
+                <td><a class="relevance-mark strong" href="#explain-physics-cs" data-expand="physics" aria-label="Strong connection: Physics and Computer Systems. Read explanation.">✔</a></td>
+                <td><a class="relevance-mark strong" href="#explain-physics-ad" data-expand="physics" aria-label="Strong connection: Physics and App Development. Read explanation.">✔</a></td>
+                <td><a class="relevance-mark strong" href="#explain-physics-ml" data-expand="physics" aria-label="Strong connection: Physics and Machine Learning. Read explanation.">✔</a></td>
               </tr>
               <tr><th scope="row">Physics-Engineering 3-2</th>
                 <td><a class="relevance-mark moderate" href="#explain-physics-engineering-3-2-dc" data-expand="physics-engineering-3-2" aria-label="Moderate connection: Physics-Engineering 3-2 and Data-Centric Computing. Read explanation.">✓</a></td>
-                <td><a class="relevance-mark strong" href="#explain-physics-engineering-3-2-cs" data-expand="physics-engineering-3-2" aria-label="Strong connection: Physics-Engineering 3-2 and Computer Systems. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-physics-engineering-3-2-cs" data-expand="physics-engineering-3-2" aria-label="Strong connection: Physics-Engineering 3-2 and Computer Systems. Read explanation.">✔</a></td>
                 <td><a class="relevance-mark moderate" href="#explain-physics-engineering-3-2-ad" data-expand="physics-engineering-3-2" aria-label="Moderate connection: Physics-Engineering 3-2 and App Development. Read explanation.">✓</a></td>
                 <td><a class="relevance-mark moderate" href="#explain-physics-engineering-3-2-ml" data-expand="physics-engineering-3-2" aria-label="Moderate connection: Physics-Engineering 3-2 and Machine Learning. Read explanation.">✓</a></td>
               </tr>
@@ -126,7 +130,7 @@
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
               </tr>
               <tr><th scope="row">Business Analytics</th>
-                <td><a class="relevance-mark strong" href="#explain-business-analytics-dc" data-expand="business-analytics" aria-label="Strong connection: Business Analytics and Data-Centric Computing. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-business-analytics-dc" data-expand="business-analytics" aria-label="Strong connection: Business Analytics and Data-Centric Computing. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td><a class="relevance-mark moderate" href="#explain-business-analytics-ml" data-expand="business-analytics" aria-label="Moderate connection: Business Analytics and Machine Learning. Read explanation.">✓</a></td>
@@ -152,12 +156,12 @@
               <tr><th scope="row">Creative Industries</th>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td><a class="relevance-mark strong" href="#explain-creative-industries-ad" data-expand="creative-industries" aria-label="Strong connection: Creative Industries and App Development. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-creative-industries-ad" data-expand="creative-industries" aria-label="Strong connection: Creative Industries and App Development. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
               </tr>
               <tr class="school-row"><th scope="rowgroup" colspan="5">Communications</th></tr>
               <tr><th scope="row">Journalism</th>
-                <td><a class="relevance-mark strong" href="#explain-journalism-dc" data-expand="journalism" aria-label="Strong connection: Journalism and Data-Centric Computing. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-journalism-dc" data-expand="journalism" aria-label="Strong connection: Journalism and Data-Centric Computing. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td><a class="relevance-mark moderate" href="#explain-journalism-ad" data-expand="journalism" aria-label="Moderate connection: Journalism and App Development. Read explanation.">✓</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
@@ -165,7 +169,7 @@
               <tr><th scope="row">Writing for FT&amp;EM</th>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td><a class="relevance-mark strong" href="#explain-writing-for-ft-em-ad" data-expand="writing-for-ft-em" aria-label="Strong connection: Writing for FT&amp;EM and App Development. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-writing-for-ft-em-ad" data-expand="writing-for-ft-em" aria-label="Strong connection: Writing for FT&amp;EM and App Development. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
               </tr>
               <tr class="school-row"><th scope="rowgroup" colspan="5">Health Sciences &amp; Human Performance</th></tr>
@@ -176,7 +180,7 @@
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
               </tr>
               <tr><th scope="row">Public and Community Health</th>
-                <td><a class="relevance-mark strong" href="#explain-public-and-community-health-dc" data-expand="public-and-community-health" aria-label="Strong connection: Public and Community Health and Data-Centric Computing. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-public-and-community-health-dc" data-expand="public-and-community-health" aria-label="Strong connection: Public and Community Health and Data-Centric Computing. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
@@ -190,7 +194,7 @@
               </tr>
               <tr><th scope="row">Sound Recording Technology</th>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
-                <td><a class="relevance-mark strong" href="#explain-sound-recording-technology-cs" data-expand="sound-recording-technology" aria-label="Strong connection: Sound Recording Technology and Computer Systems. Read explanation.">✓✓</a></td>
+                <td><a class="relevance-mark strong" href="#explain-sound-recording-technology-cs" data-expand="sound-recording-technology" aria-label="Strong connection: Sound Recording Technology and Computer Systems. Read explanation.">✔</a></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
                 <td class="no-highlight"><span aria-label="Not highlighted">—</span></td>
               </tr>
