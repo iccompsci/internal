@@ -13,28 +13,28 @@
 <g id="node1" class="node">
 <title>IWD</title>
 <polygon fill="none" stroke="gray" points="91,-556.9 15.75,-556.9 15.75,-515.9 91,-515.9 91,-556.9"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-537.7" font-family="Times" font-size="16.00">Intro</text>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-521.2" font-family="Times" font-size="16.00">Web Dev</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-537.7" font-family="Times" font-size="16.00" textLength="31.16" lengthAdjust="spacingAndGlyphs">Intro</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-521.2" font-family="Times" font-size="16.00" textLength="59.14" lengthAdjust="spacingAndGlyphs">Web Dev</text>
 </g>
 <!-- IGD -->
 <g id="node2" class="node">
 <title>IGD</title>
 <polygon fill="none" stroke="gray" points="83.5,-643.3 23.25,-643.3 23.25,-602.3 83.5,-602.3 83.5,-643.3"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-624.1" font-family="Times" font-size="16.00">Game</text>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-607.6" font-family="Times" font-size="16.00">Design</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-624.1" font-family="Times" font-size="16.00" textLength="38.17" lengthAdjust="spacingAndGlyphs">Game</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-607.6" font-family="Times" font-size="16.00" textLength="44.77" lengthAdjust="spacingAndGlyphs">Design</text>
 </g>
 <!-- WSD -->
 <g id="node3" class="node">
 <title>WSD</title>
 <polygon fill="none" stroke="gray" points="94.75,-384.1 12,-384.1 12,-343.1 94.75,-343.1 94.75,-384.1"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-364.9" font-family="Times" font-size="16.00">Structured</text>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-348.4" font-family="Times" font-size="16.00">Data</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-364.9" font-family="Times" font-size="16.00" textLength="66.77" lengthAdjust="spacingAndGlyphs">Structured</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-348.4" font-family="Times" font-size="16.00" textLength="30.08" lengthAdjust="spacingAndGlyphs">Data</text>
 </g>
 <!-- SSS -->
 <g id="node4" class="node">
 <title>SSS</title>
 <polygon fill="none" stroke="gray" points="91,-295.2 15.75,-295.2 15.75,-259.2 91,-259.2 91,-295.2"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-270.25" font-family="Times" font-size="16.00">Scripting</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-270.25" font-family="Times" font-size="16.00" textLength="58.42" lengthAdjust="spacingAndGlyphs">Scripting</text>
 </g>
 <!-- WSD&#45;&gt;SSS -->
 <g id="edge1" class="edge">
@@ -46,29 +46,29 @@
 <g id="node5" class="node">
 <title>WRD</title>
 <polygon fill="none" stroke="gray" points="106.75,-211.3 0,-211.3 0,-170.3 106.75,-170.3 106.75,-211.3"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-192.1" font-family="Times" font-size="16.00">Intro</text>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-175.6" font-family="Times" font-size="16.00">Relational DB</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-192.1" font-family="Times" font-size="16.00" textLength="31.16" lengthAdjust="spacingAndGlyphs">Intro</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-175.6" font-family="Times" font-size="16.00" textLength="91.23" lengthAdjust="spacingAndGlyphs">Relational DB</text>
 </g>
 <!-- PTC -->
 <g id="node6" class="node">
 <title>PTC</title>
 <polygon fill="none" stroke="gray" points="97.38,-124.9 9.38,-124.9 9.38,-83.9 97.38,-83.9 97.38,-124.9"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-105.7" font-family="Times" font-size="16.00">Plain&#45;Text</text>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-89.2" font-family="Times" font-size="16.00">Computing</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-105.7" font-family="Times" font-size="16.00" textLength="64.12" lengthAdjust="spacingAndGlyphs">Plain&#45;Text</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-89.2" font-family="Times" font-size="16.00" textLength="71.39" lengthAdjust="spacingAndGlyphs">Computing</text>
 </g>
 <!-- CS1 -->
 <g id="node7" class="node">
 <title>CS1</title>
 <polygon fill="#899a83" stroke="#899a83" points="93.25,-470.5 13.5,-470.5 13.5,-429.5 93.25,-429.5 93.25,-470.5"/>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-451.3" font-family="Times" font-size="15.00">Foundations</text>
-<text xml:space="preserve" text-anchor="middle" x="53.38" y="-434.8" font-family="Times" font-size="16.00">of CS I</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-451.3" font-family="Times" font-size="15.00" textLength="73.86" lengthAdjust="spacingAndGlyphs">Foundations</text>
+<text xml:space="preserve" text-anchor="middle" x="53.38" y="-434.8" font-family="Times" font-size="16.00" textLength="46.06" lengthAdjust="spacingAndGlyphs">of CS I</text>
 </g>
 <!-- CS2 -->
 <g id="node8" class="node">
 <title>CS2</title>
 <polygon fill="none" stroke="gray" points="222.85,-470.5 143.1,-470.5 143.1,-429.5 222.85,-429.5 222.85,-470.5"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-451.3" font-family="Times" font-size="15.00">Foundations</text>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-434.8" font-family="Times" font-size="16.00">of CS II</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-451.3" font-family="Times" font-size="15.00" textLength="73.86" lengthAdjust="spacingAndGlyphs">Foundations</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-434.8" font-family="Times" font-size="16.00" textLength="51.39" lengthAdjust="spacingAndGlyphs">of CS II</text>
 </g>
 <!-- CS1&#45;&gt;CS2 -->
 <g id="edge2" class="edge">
@@ -80,8 +80,8 @@
 <g id="node12" class="node">
 <title>DM</title>
 <polygon fill="none" stroke="gray" points="223.22,-384.1 142.72,-384.1 142.72,-343.1 223.22,-343.1 223.22,-384.1"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-364.9" font-family="Times" font-size="16.00">Discrete</text>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-348.4" font-family="Times" font-size="16.00">Structures</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-364.9" font-family="Times" font-size="16.00" textLength="53.09" lengthAdjust="spacingAndGlyphs">Discrete</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-348.4" font-family="Times" font-size="16.00" textLength="64.88" lengthAdjust="spacingAndGlyphs">Structures</text>
 </g>
 <!-- CS1&#45;&gt;DM -->
 <g id="edge7" class="edge">
@@ -93,8 +93,8 @@
 <g id="node9" class="node">
 <title>FSWD</title>
 <polygon fill="none" stroke="gray" points="353.57,-556.9 271.57,-556.9 271.57,-515.9 353.57,-515.9 353.57,-556.9"/>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-537.7" font-family="Times" font-size="16.00">Full&#45;Stack</text>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-521.2" font-family="Times" font-size="16.00">Web Dev</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-537.7" font-family="Times" font-size="16.00" textLength="66.19" lengthAdjust="spacingAndGlyphs">Full&#45;Stack</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-521.2" font-family="Times" font-size="16.00" textLength="59.14" lengthAdjust="spacingAndGlyphs">Web Dev</text>
 </g>
 <!-- CS2&#45;&gt;FSWD -->
 <g id="edge3" class="edge">
@@ -106,8 +106,8 @@
 <g id="node10" class="node">
 <title>GD</title>
 <polygon fill="none" stroke="gray" points="363.32,-643.3 261.82,-643.3 261.82,-602.3 363.32,-602.3 363.32,-643.3"/>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-624.1" font-family="Times" font-size="16.00">Game</text>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-607.6" font-family="Times" font-size="16.00">Development</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-624.1" font-family="Times" font-size="16.00" textLength="38.17" lengthAdjust="spacingAndGlyphs">Game</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-607.6" font-family="Times" font-size="16.00" textLength="84.8" lengthAdjust="spacingAndGlyphs">Development</text>
 </g>
 <!-- CS2&#45;&gt;GD -->
 <g id="edge4" class="edge">
@@ -119,8 +119,8 @@
 <g id="node11" class="node">
 <title>Sys1</title>
 <polygon fill="none" stroke="gray" points="352.45,-902.5 272.7,-902.5 272.7,-861.5 352.45,-861.5 352.45,-902.5"/>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-883.3" font-family="Times" font-size="16.00">Computer</text>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-866.8" font-family="Times" font-size="16.00">Systems I</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-883.3" font-family="Times" font-size="16.00" textLength="63.7" lengthAdjust="spacingAndGlyphs">Computer</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-866.8" font-family="Times" font-size="16.00" textLength="61.56" lengthAdjust="spacingAndGlyphs">Systems I</text>
 </g>
 <!-- CS2&#45;&gt;Sys1 -->
 <g id="edge5" class="edge">
@@ -132,8 +132,8 @@
 <g id="node13" class="node">
 <title>DS</title>
 <polygon fill="none" stroke="gray" points="352.82,-470.5 272.32,-470.5 272.32,-429.5 352.82,-429.5 352.82,-470.5"/>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-451.3" font-family="Times" font-size="16.00">Data</text>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-434.8" font-family="Times" font-size="16.00">Structures</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-451.3" font-family="Times" font-size="16.00" textLength="30.08" lengthAdjust="spacingAndGlyphs">Data</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-434.8" font-family="Times" font-size="16.00" textLength="64.88" lengthAdjust="spacingAndGlyphs">Structures</text>
 </g>
 <!-- CS2&#45;&gt;DS -->
 <g id="edge8" class="edge">
@@ -145,8 +145,8 @@
 <g id="node14" class="node">
 <title>RDS</title>
 <polygon fill="none" stroke="gray" points="354.32,-384.1 270.82,-384.1 270.82,-343.1 354.32,-343.1 354.32,-384.1"/>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-364.9" font-family="Times" font-size="16.00">Relational</text>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-348.4" font-family="Times" font-size="16.00">DB &amp; GIS</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-364.9" font-family="Times" font-size="16.00" textLength="65.02" lengthAdjust="spacingAndGlyphs">Relational</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-348.4" font-family="Times" font-size="16.00" textLength="68.44" lengthAdjust="spacingAndGlyphs">DB &amp; GIS</text>
 </g>
 <!-- CS2&#45;&gt;RDS -->
 <g id="edge9" class="edge">
@@ -158,8 +158,8 @@
 <g id="node21" class="node">
 <title>ML</title>
 <polygon fill="none" stroke="gray" points="479.05,-196.9 405.3,-196.9 405.3,-155.9 479.05,-155.9 479.05,-196.9"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-177.7" font-family="Times" font-size="16.00">Machine</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-161.2" font-family="Times" font-size="16.00">Learning</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-177.7" font-family="Times" font-size="16.00" textLength="55.75" lengthAdjust="spacingAndGlyphs">Machine</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-161.2" font-family="Times" font-size="16.00" textLength="57.78" lengthAdjust="spacingAndGlyphs">Learning</text>
 </g>
 <!-- CS2&#45;&gt;ML -->
 <g id="edge20" class="edge">
@@ -171,8 +171,8 @@
 <g id="node19" class="node">
 <title>HCI</title>
 <polygon fill="none" stroke="gray" points="486.17,-643.3 398.17,-643.3 398.17,-602.3 486.17,-602.3 486.17,-643.3"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-624.1" font-family="Times" font-size="16.00">User</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-607.6" font-family="Times" font-size="16.00">Experience</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-624.1" font-family="Times" font-size="16.00" textLength="30.2" lengthAdjust="spacingAndGlyphs">User</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-607.6" font-family="Times" font-size="16.00" textLength="72.27" lengthAdjust="spacingAndGlyphs">Experience</text>
 </g>
 <!-- FSWD&#45;&gt;HCI -->
 <g id="edge16" class="edge">
@@ -190,8 +190,8 @@
 <g id="node16" class="node">
 <title>Sys2</title>
 <polygon fill="none" stroke="gray" points="483.17,-902.5 401.17,-902.5 401.17,-861.5 483.17,-861.5 483.17,-902.5"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-883.3" font-family="Times" font-size="16.00">Computer</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-866.8" font-family="Times" font-size="16.00">Systems II</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-883.3" font-family="Times" font-size="16.00" textLength="63.7" lengthAdjust="spacingAndGlyphs">Computer</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-866.8" font-family="Times" font-size="16.00" textLength="66.89" lengthAdjust="spacingAndGlyphs">Systems II</text>
 </g>
 <!-- Sys1&#45;&gt;Sys2 -->
 <g id="edge12" class="edge">
@@ -203,8 +203,8 @@
 <g id="node25" class="node">
 <title>CN</title>
 <polygon fill="none" stroke="gray" points="482.05,-988.9 402.3,-988.9 402.3,-947.9 482.05,-947.9 482.05,-988.9"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-969.7" font-family="Times" font-size="16.00">Computer</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-953.2" font-family="Times" font-size="16.00">Networks</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-969.7" font-family="Times" font-size="16.00" textLength="63.7" lengthAdjust="spacingAndGlyphs">Computer</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-953.2" font-family="Times" font-size="16.00" textLength="61.27" lengthAdjust="spacingAndGlyphs">Networks</text>
 </g>
 <!-- Sys1&#45;&gt;CN -->
 <g id="edge24" class="edge">
@@ -216,9 +216,9 @@
 <g id="node27" class="node">
 <title>AOS</title>
 <polygon fill="none" stroke="gray" points="621.02,-867.55 522.52,-867.55 522.52,-810.05 621.02,-810.05 621.02,-867.55"/>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-848.35" font-family="Times" font-size="16.00">Algorithms+</text>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-831.85" font-family="Times" font-size="16.00">Organization</text>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-815.35" font-family="Times" font-size="16.00">=Systems</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-848.35" font-family="Times" font-size="16.00" textLength="81.41" lengthAdjust="spacingAndGlyphs">Algorithms+</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-831.85" font-family="Times" font-size="16.00" textLength="82.91" lengthAdjust="spacingAndGlyphs">Organization</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-815.35" font-family="Times" font-size="16.00" textLength="61.27" lengthAdjust="spacingAndGlyphs">=Systems</text>
 </g>
 <!-- Sys1&#45;&gt;AOS -->
 <g id="edge26" class="edge">
@@ -242,8 +242,8 @@
 <g id="node17" class="node">
 <title>Alg</title>
 <polygon fill="none" stroke="gray" points="483.55,-470.5 400.8,-470.5 400.8,-429.5 483.55,-429.5 483.55,-470.5"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-451.3" font-family="Times" font-size="16.00">Algorithm</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-434.8" font-family="Times" font-size="16.00">Design</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-451.3" font-family="Times" font-size="16.00" textLength="66.16" lengthAdjust="spacingAndGlyphs">Algorithm</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-434.8" font-family="Times" font-size="16.00" textLength="44.77" lengthAdjust="spacingAndGlyphs">Design</text>
 </g>
 <!-- DM&#45;&gt;Alg -->
 <g id="edge13" class="edge">
@@ -255,8 +255,8 @@
 <g id="node15" class="node">
 <title>MD</title>
 <polygon fill="none" stroke="gray" points="492.92,-816.1 391.42,-816.1 391.42,-775.1 492.92,-775.1 492.92,-816.1"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-796.9" font-family="Times" font-size="16.00">Mobile</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-780.4" font-family="Times" font-size="16.00">Development</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-796.9" font-family="Times" font-size="16.00" textLength="46.23" lengthAdjust="spacingAndGlyphs">Mobile</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-780.4" font-family="Times" font-size="16.00" textLength="84.8" lengthAdjust="spacingAndGlyphs">Development</text>
 </g>
 <!-- DS&#45;&gt;MD -->
 <g id="edge11" class="edge">
@@ -274,8 +274,8 @@
 <g id="node18" class="node">
 <title>PL</title>
 <polygon fill="#899a83" stroke="#899a83" points="483.92,-729.7 400.42,-729.7 400.42,-688.7 483.92,-688.7 483.92,-729.7"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-710.5" font-family="Times" font-size="16.00">Prog.</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-694" font-family="Times" font-size="16.00">Languages</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-710.5" font-family="Times" font-size="16.00" textLength="33.27" lengthAdjust="spacingAndGlyphs">Prog.</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-694" font-family="Times" font-size="16.00" textLength="68.17" lengthAdjust="spacingAndGlyphs">Languages</text>
 </g>
 <!-- DS&#45;&gt;PL -->
 <g id="edge15" class="edge">
@@ -293,8 +293,8 @@
 <g id="node20" class="node">
 <title>SE</title>
 <polygon fill="#899a83" stroke="#899a83" points="489.17,-556.9 395.17,-556.9 395.17,-515.9 489.17,-515.9 489.17,-556.9"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-537.7" font-family="Times" font-size="16.00">Software</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-521.2" font-family="Times" font-size="16.00">Engineering</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-537.7" font-family="Times" font-size="16.00" textLength="57.12" lengthAdjust="spacingAndGlyphs">Software</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-521.2" font-family="Times" font-size="16.00" textLength="77.69" lengthAdjust="spacingAndGlyphs">Engineering</text>
 </g>
 <!-- DS&#45;&gt;SE -->
 <g id="edge19" class="edge">
@@ -306,8 +306,8 @@
 <g id="node24" class="node">
 <title>AIGR</title>
 <polygon fill="none" stroke="gray" points="496.67,-297.7 387.67,-297.7 387.67,-256.7 496.67,-256.7 496.67,-297.7"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-278.5" font-family="Times" font-size="16.00">AI for</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-262" font-family="Times" font-size="16.00">Games/Robots</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-278.5" font-family="Times" font-size="16.00" textLength="38.94" lengthAdjust="spacingAndGlyphs">AI for</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-262" font-family="Times" font-size="16.00" textLength="93.91" lengthAdjust="spacingAndGlyphs">Games/Robots</text>
 </g>
 <!-- DS&#45;&gt;AIGR -->
 <g id="edge23" class="edge">
@@ -319,8 +319,8 @@
 <g id="node26" class="node">
 <title>DB</title>
 <polygon fill="none" stroke="gray" points="481.67,-384.1 402.67,-384.1 402.67,-343.1 481.67,-343.1 481.67,-384.1"/>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-364.9" font-family="Times" font-size="16.00">Topics in</text>
-<text xml:space="preserve" text-anchor="middle" x="442.17" y="-348.4" font-family="Times" font-size="16.00">Databases</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-364.9" font-family="Times" font-size="16.00" textLength="58.44" lengthAdjust="spacingAndGlyphs">Topics in</text>
+<text xml:space="preserve" text-anchor="middle" x="442.17" y="-348.4" font-family="Times" font-size="16.00" textLength="64.64" lengthAdjust="spacingAndGlyphs">Databases</text>
 </g>
 <!-- RDS&#45;&gt;DB -->
 <g id="edge25" class="edge">
@@ -338,9 +338,9 @@
 <g id="node29" class="node">
 <title>NLP</title>
 <polygon fill="#899a83" stroke="#899a83" points="613.9,-248.35 529.65,-248.35 529.65,-190.85 613.9,-190.85 613.9,-248.35"/>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-229.15" font-family="Times" font-size="16.00">Natural</text>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-212.65" font-family="Times" font-size="16.00">Language</text>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-196.15" font-family="Times" font-size="16.00">Processing</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-229.15" font-family="Times" font-size="16.00" textLength="47.59" lengthAdjust="spacingAndGlyphs">Natural</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-212.65" font-family="Times" font-size="16.00" textLength="62.06" lengthAdjust="spacingAndGlyphs">Language</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-196.15" font-family="Times" font-size="16.00" textLength="68.5" lengthAdjust="spacingAndGlyphs">Processing</text>
 </g>
 <!-- Alg&#45;&gt;NLP -->
 <g id="edge30" class="edge">
@@ -352,9 +352,9 @@
 <g id="node28" class="node">
 <title>TML</title>
 <polygon fill="none" stroke="gray" points="609.02,-167.71 534.52,-167.71 534.52,-110.21 609.02,-110.21 609.02,-167.71"/>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-148.51" font-family="Times" font-size="16.00">Topics in</text>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-132.01" font-family="Times" font-size="16.00">Machine</text>
-<text xml:space="preserve" text-anchor="middle" x="571.77" y="-115.51" font-family="Times" font-size="16.00">Learning</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-148.51" font-family="Times" font-size="16.00" textLength="58.44" lengthAdjust="spacingAndGlyphs">Topics in</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-132.01" font-family="Times" font-size="16.00" textLength="55.75" lengthAdjust="spacingAndGlyphs">Machine</text>
+<text xml:space="preserve" text-anchor="middle" x="571.77" y="-115.51" font-family="Times" font-size="16.00" textLength="57.78" lengthAdjust="spacingAndGlyphs">Learning</text>
 </g>
 <!-- ML&#45;&gt;TML -->
 <g id="edge28" class="edge">
@@ -372,7 +372,7 @@
 <g id="node22" class="node">
 <title>Stats</title>
 <polygon fill="none" stroke="gray" points="340.82,-237.6 284.32,-237.6 284.32,-201.6 340.82,-201.6 340.82,-237.6"/>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-212.65" font-family="Times" font-size="16.00">[Stats]</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-212.65" font-family="Times" font-size="16.00" textLength="41.5" lengthAdjust="spacingAndGlyphs">[Stats]</text>
 </g>
 <!-- Stats&#45;&gt;ML -->
 <g id="edge21" class="edge">
@@ -384,7 +384,7 @@
 <g id="node23" class="node">
 <title>LA</title>
 <polygon fill="none" stroke="gray" points="348.32,-165.6 276.82,-165.6 276.82,-129.6 348.32,-129.6 348.32,-165.6"/>
-<text xml:space="preserve" text-anchor="middle" x="312.57" y="-140.65" font-family="Times" font-size="16.00">[LinAlg]</text>
+<text xml:space="preserve" text-anchor="middle" x="312.57" y="-140.65" font-family="Times" font-size="16.00" textLength="56.12" lengthAdjust="spacingAndGlyphs">[LinAlg]</text>
 </g>
 <!-- LA&#45;&gt;ML -->
 <g id="edge22" class="edge">
@@ -396,8 +396,8 @@
 <g id="node30" class="node">
 <title>StatBEM</title>
 <polygon fill="none" stroke="gray" points="222.47,-309.22 143.47,-309.22 143.47,-268.22 222.47,-268.22 222.47,-309.22"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-290.02" font-family="Times" font-size="16.00">Bus/Econ</text>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-273.52" font-family="Times" font-size="16.00">Mngmt</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-290.02" font-family="Times" font-size="16.00" textLength="62.83" lengthAdjust="spacingAndGlyphs">Bus/Econ</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-273.52" font-family="Times" font-size="16.00" textLength="46.7" lengthAdjust="spacingAndGlyphs">Mngmt</text>
 </g>
 <!-- StatBEM&#45;&gt;Stats -->
 <g id="edge31" class="edge">
@@ -409,8 +409,8 @@
 <g id="node31" class="node">
 <title>StatsHLSS</title>
 <polygon fill="none" stroke="gray" points="217.97,-240.1 147.97,-240.1 147.97,-199.1 217.97,-199.1 217.97,-240.1"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-220.9" font-family="Times" font-size="16.00">Health</text>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-204.4" font-family="Times" font-size="16.00">Life/Soc</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-220.9" font-family="Times" font-size="16.00" textLength="42.73" lengthAdjust="spacingAndGlyphs">Health</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-204.4" font-family="Times" font-size="16.00" textLength="54.28" lengthAdjust="spacingAndGlyphs">Life/Soc</text>
 </g>
 <!-- StatsHLSS&#45;&gt;Stats -->
 <g id="edge32" class="edge">
@@ -422,7 +422,7 @@
 <g id="node32" class="node">
 <title>StatDS</title>
 <polygon fill="none" stroke="gray" points="217.6,-174.24 148.35,-174.24 148.35,-138.24 217.6,-138.24 217.6,-174.24"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-149.29" font-family="Times" font-size="16.00">Data Sci</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-149.29" font-family="Times" font-size="16.00" textLength="54.38" lengthAdjust="spacingAndGlyphs">Data Sci</text>
 </g>
 <!-- StatDS&#45;&gt;Stats -->
 <g id="edge33" class="edge">
@@ -434,7 +434,7 @@
 <g id="node33" class="node">
 <title>AppLA</title>
 <polygon fill="none" stroke="gray" points="216.85,-108 149.1,-108 149.1,-72 216.85,-72 216.85,-108"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-83.05" font-family="Times" font-size="16.00">Applied</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-83.05" font-family="Times" font-size="16.00" textLength="51.56" lengthAdjust="spacingAndGlyphs">Applied</text>
 </g>
 <!-- AppLA&#45;&gt;LA -->
 <g id="edge34" class="edge">
@@ -446,7 +446,7 @@
 <g id="node34" class="node">
 <title>NormLA</title>
 <polygon fill="none" stroke="gray" points="219.1,-36 146.85,-36 146.85,0 219.1,0 219.1,-36"/>
-<text xml:space="preserve" text-anchor="middle" x="182.97" y="-11.05" font-family="Times" font-size="16.00">Standard</text>
+<text xml:space="preserve" text-anchor="middle" x="182.97" y="-11.05" font-family="Times" font-size="16.00" textLength="56.58" lengthAdjust="spacingAndGlyphs">Standard</text>
 </g>
 <!-- NormLA&#45;&gt;LA -->
 <g id="edge35" class="edge">
