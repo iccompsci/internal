@@ -10,12 +10,12 @@
 .answer p{margin:0;max-width:780px}
 .major-question .wrap.reading-width{max-width:1160px}
 .major-question h2,.curriculum-section .section-heading h2,.sheet-section .section-heading h2{font:500 clamp(37px,4.3vw,56px)/1.15 var(--serif);letter-spacing:-.045em;margin:0 0 15px}
-.major-question p{max-width:800px;font-size:16px;line-height:1.8}
+.major-question p{font-size:16px;line-height:1.8}
 /* Consistent, illustration-free introductions for all majors and minors. */
 .cs-opening { padding: 22px 0 24px; }
 .cs-opening .wrap.reading-width { display: block; min-height: 0; padding: 12px 0; }
 .cs-opening .cs-opening-copy { max-width: 100%; }
-.cs-opening p { max-width: 900px; font-size: 17px; line-height: 1.8; margin: 0 0 17px; }
+.cs-opening p { font-size: 17px; line-height: 1.8; margin: 0 0 17px; }
 .cs-opening p:last-child { margin-bottom: 0; }
 .native-courses .course-list{border-top:1px solid #cedbd1}
 .course-entry{display:block;padding:22px 0;border-bottom:1px solid #d9e3da}
