@@ -19,7 +19,7 @@
 <!-- IGD -->
 <g id="node2" class="node">
 <title>IGD</title>
-<polygon fill="none" stroke="gray" points="74.5,-648.43 19.5,-648.43 19.5,-611.93 74.5,-611.93 74.5,-648.43"/>
+<polygon fill="#899a83" stroke="#899a83" points="74.5,-648.43 19.5,-648.43 19.5,-611.93 74.5,-611.93 74.5,-648.43"/>
 <text xml:space="preserve" text-anchor="middle" x="47" y="-631.13" font-family="Times" font-size="14.00">Game</text>
 <text xml:space="preserve" text-anchor="middle" x="47" y="-616.88" font-family="Times" font-size="14.00">Design</text>
 </g>
