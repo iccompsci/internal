@@ -15,16 +15,17 @@
     .opportunities p { max-width: 1050px; }
     .opportunities h2 { margin: 28px 0 12px; font-size: 1.65em; }
     .opportunities .explainer { max-width: 1050px; }
-    .opportunities .table-scroll { overflow-x: auto; border: 1px solid #cbdad3; background: #fff; border-radius: 4px; }
+    .opportunities .table-scroll { width: fit-content; max-width: 100%; overflow-x: auto; border: 1px solid #cbdad3; background: #fff; border-radius: 4px; }
     .opportunities table { border-collapse: collapse; width: max-content; max-width: none; min-width: 0; table-layout: auto; line-height: 1.35; }
-    .opportunities th, .opportunities td { padding: 8px 5px; border-bottom: 1px solid #e1e8e2; }
+    .opportunities th, .opportunities td { padding: 8px 8px; border-bottom: 1px solid #e1e8e2; }
     .opportunities thead th { background: #e5f0ea; font-weight: bold; vertical-align: bottom; text-align: center; }
     .opportunities thead th:first-child { text-align: right; width: auto; }
     .opportunities thead a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
     .opportunities tbody th[scope="row"] { text-align: right; font-weight: normal; }
     .opportunities tbody td { text-align: center; width: auto; }
     .opportunities .school-row th { text-align: center; padding: 11px 12px 6px; background: #eef4ef; font-weight: bold; border-top: 1px solid #cbdad3; }
-    .opportunities .relevance-mark { display: inline-block; min-width: 1.6em; padding: 1px 2px; border-radius: 3px; color: #19564f; text-decoration: underline; text-decoration-color: #90a99d; text-underline-offset: 4px; }
+    .opportunities .school-row .school-spacer { background: #fff; border-top: 0; }
+    .opportunities .relevance-mark { display: inline-block; min-width: 1.6em; padding: 1px 2px; border-radius: 3px; color: #19564f; text-decoration: none; }
     .opportunities .relevance-mark.strong { font-weight: 900; transform: scale(1.12); }
     .opportunities .relevance-mark.moderate { font-weight: 400; }
     .opportunities .relevance-mark:hover, .opportunities .relevance-mark:focus-visible { background: #e5f0ea; }
@@ -45,8 +46,8 @@
     @media (max-width: 650px) {
       .opportunities { padding-top: 24px; }
       .opportunities .table-scroll { margin: 0; }
-      .opportunities table { width: min-content; }
-      .opportunities th, .opportunities td { padding: 7px 4px; }
+      .opportunities table { width: max-content; }
+      .opportunities th, .opportunities td { padding: 7px 6px; }
       .opportunities thead th { font-size: 13px; line-height: 1.2; }
       .opportunities tbody th[scope="row"] { font-size: 14px; line-height: 1.25; }
       .opportunities .school-row th { text-align: center; }
@@ -67,7 +68,7 @@
             <tr><th scope="col">Ithaca College major</th><th scope="col"><a href="../minors/data-centric-computing.html">Data-Centric<br>Computing</a></th><th scope="col"><a href="../minors/computer-systems.html">Computer<br>Systems</a></th><th scope="col"><a href="../minors/app-development.html">App<br>Development</a></th><th scope="col"><a href="../minors/machine-learning.html">Machine<br>Learning</a></th></tr>
           </thead>
           <tbody>
-              <tr class="school-row"><th scope="rowgroup" colspan="5">Humanities &amp; Sciences</th></tr>
+              <tr class="school-row"><td class="school-spacer" aria-hidden="true"></td><th scope="rowgroup" colspan="4">Humanities &amp; Sciences</th></tr>
               <tr><th scope="row">Applied Physics</th>
                 <td><a class="relevance-mark strong" href="#explain-applied-physics-dc" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Data-Centric Computing. Read explanation.">✔</a></td>
                 <td><a class="relevance-mark strong" href="#explain-applied-physics-cs" data-expand="applied-physics" aria-label="Strong connection: Applied Physics and Computer Systems. Read explanation.">✔</a></td>
@@ -116,7 +117,7 @@
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
-              <tr class="school-row"><th scope="rowgroup" colspan="5">Business</th></tr>
+              <tr class="school-row"><td class="school-spacer" aria-hidden="true"></td><th scope="rowgroup" colspan="4">Business</th></tr>
               <tr><th scope="row">Accounting</th>
                 <td><a class="relevance-mark moderate" href="#explain-accounting-dc" data-expand="accounting" aria-label="Moderate connection: Accounting and Data-Centric Computing. Read explanation.">✓</a></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
@@ -153,7 +154,7 @@
                 <td><a class="relevance-mark strong" href="#explain-creative-industries-ad" data-expand="creative-industries" aria-label="Strong connection: Creative Industries and App Development. Read explanation.">✔</a></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
-              <tr class="school-row"><th scope="rowgroup" colspan="5">Communications</th></tr>
+              <tr class="school-row"><td class="school-spacer" aria-hidden="true"></td><th scope="rowgroup" colspan="4">Communications</th></tr>
               <tr><th scope="row">Journalism</th>
                 <td><a class="relevance-mark strong" href="#explain-journalism-dc" data-expand="journalism" aria-label="Strong connection: Journalism and Data-Centric Computing. Read explanation.">✔</a></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
@@ -166,7 +167,7 @@
                 <td><a class="relevance-mark strong" href="#explain-writing-for-ft-em-ad" data-expand="writing-for-ft-em" aria-label="Strong connection: Writing for FT&amp;EM and App Development. Read explanation.">✔</a></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
-              <tr class="school-row"><th scope="rowgroup" colspan="5">Health Sciences &amp; Human Performance</th></tr>
+              <tr class="school-row"><td class="school-spacer" aria-hidden="true"></td><th scope="rowgroup" colspan="4">Health Sciences &amp; Human Performance</th></tr>
               <tr><th scope="row">Exercise Science</th>
                 <td><a class="relevance-mark moderate" href="#explain-exercise-science-dc" data-expand="exercise-science" aria-label="Moderate connection: Exercise Science and Data-Centric Computing. Read explanation.">✓</a></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
@@ -179,7 +180,7 @@
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
               </tr>
-              <tr class="school-row"><th scope="rowgroup" colspan="5">Music, Theatre &amp; Dance</th></tr>
+              <tr class="school-row"><td class="school-spacer" aria-hidden="true"></td><th scope="rowgroup" colspan="4">Music, Theatre &amp; Dance</th></tr>
               <tr><th scope="row">Music Composition</th>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
                 <td class="no-highlight" aria-label="No highlighted connection"></td>
