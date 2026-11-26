@@ -25,4 +25,6 @@
 .interactive-prereq-dialog ul{padding-left:23px;margin:5px 0 0;color:#526965}
 .interactive-prereq-dialog li{margin:4px 0}
 .interactive-prereq-close{float:right;background:transparent;border:0;cursor:pointer;font-size:30px;line-height:1;color:#335d42}
+/* A uniform, browser-safe label size for the entire mobile diagram. */
+@media(max-width:650px){.interactive-curriculum svg g.node text{font-size:13px!important}}
 @media(max-width:650px){.interactive-curriculum svg{display:block}.interactive-mobile-map{display:block}.interactive-prereq-dialog{padding:20px}.interactive-prereq-dialog h2{font-size:25px}}
