@@ -13,8 +13,8 @@ svg text, .interactive-curriculum svg text,
  * its poster-text companions.
  *
  * Ordinary text: 18px Times New Roman, irrespective of section.
- * Headings keep their typographic hierarchy. All prose uses the same
- * available width; diagrams keep their own sensible maximum dimensions.
+ * Headings keep their typographic hierarchy. Prose is capped at 75ch
+ * for readability; diagrams and page containers retain their widths.
  */
 body:not(:has(.poster-gallery, .poster-transcript)) main {
   --content-body-size: 18px;
@@ -38,12 +38,15 @@ body:not(:has(.poster-gallery, .poster-transcript)) main.reasons-content {
   margin-right: auto !important;
 }
 
-/* Do not shrink prose in opening copy, explanations, course listings, or captions. */
+/* Limit reading lines, not diagrams, cards, or page containers.
+   This also applies to poster transcripts, without changing poster images. */
+main :is(p, blockquote) {
+  max-width: 75ch !important;
+}
+/* Keep non-prose layouts free to use their available width. */
 body:not(:has(.poster-gallery, .poster-transcript)) main :is(
-  p, blockquote, figcaption, .intro, .lead-copy,
-  .reading-width, .cs-opening-copy, .section-heading,
-  .section-heading > div, .group-head p, .answer p,
-  .course-entry p, .page-title, .reasons-content
+  figcaption, .reading-width, .cs-opening-copy, .section-heading,
+  .section-heading > div, .page-title, .reasons-content
 ) {
   max-width: none !important;
 }
