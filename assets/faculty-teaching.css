@@ -13,7 +13,6 @@
 }
 .faculty-teaching svg text {
   font-family: 'Times New Roman', Times, serif !important;
-  font-size: 15px !important;
   font-weight: 400 !important;
 }
 .faculty-teaching .interactive-course { cursor: pointer; outline: none; }
