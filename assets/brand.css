@@ -130,10 +130,10 @@
 .group:is(#majors, #minors, #micro-credentials) .group-head p { max-width: none; }
 .group { border-top: 0; }
 .group:is(#majors, #minors, #micro-credentials) { padding-top: 20px; padding-bottom: 20px; }
-.group:is(#faculty, #other) { padding-top: 25px; padding-bottom: 25px; }
+.group:is(#faculty, #explore) { padding-top: 25px; padding-bottom: 25px; }
 /* Separate faculty from the remaining links within the existing section gap. */
 .group#faculty { padding-bottom: 16px; }
-.group#other { border-top: 1px solid #cbdad3 !important; padding-top: 16px; }
+.group#explore { border-top: 1px solid #cbdad3 !important; padding-top: 16px; }
 
 @media (max-width: 800px) {
   .hero { padding: 42px 16px 46px; min-height: 0; }
