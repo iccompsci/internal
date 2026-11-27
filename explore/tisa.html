@@ -77,15 +77,18 @@
     {
         "src": "../assets/tisa/photos/tisa-18-7967.jpg",
         "alt": "TISA participants gathered in a large outdoor group photo",
-        "position": "center 72%"
+        "position": "center 72%",
+        "offset": 80
     },
     {
         "src": "../assets/tisa/photos/tisa-01-0391.jpg",
-        "alt": "Students playing games together in the esports lounge"
+        "alt": "Students playing games together in the esports lounge",
+        "offset": 25
     },
     {
         "src": "../assets/tisa/photos/tisa-02-3582.jpg",
-        "alt": "Students working with a small robot on a large paper activity mat"
+        "alt": "Students working with a small robot on a large paper activity mat",
+        "offset": 25
     },
     {
         "src": "../assets/tisa/photos/tisa-03-3682.jpg",
@@ -93,11 +96,13 @@
     },
     {
         "src": "../assets/tisa/photos/tisa-04-3757.jpg",
-        "alt": "TISA participants gathered at the Ithaca College fountains"
+        "alt": "TISA participants gathered at the Ithaca College fountains",
+        "offset": -50
     },
     {
         "src": "../assets/tisa/photos/tisa-05-3785.jpg",
-        "alt": "Students attending a presentation on game design"
+        "alt": "Students attending a presentation on game design",
+        "offset": 100
     },
     {
         "src": "../assets/tisa/photos/tisa-06-3802.jpg",
@@ -105,7 +110,8 @@
     },
     {
         "src": "../assets/tisa/photos/tisa-07-3827.jpg",
-        "alt": "Students observing a demonstration in a green-screen studio"
+        "alt": "Students observing a demonstration in a green-screen studio",
+        "offset": 50
     },
     {
         "src": "../assets/tisa/photos/tisa-08-3832.jpg",
@@ -117,7 +123,8 @@
     },
     {
         "src": "../assets/tisa/photos/tisa-10-3941.jpg",
-        "alt": "Students experimenting with robots and red cups on the floor"
+        "alt": "Students experimenting with robots and red cups on the floor",
+        "offset": -25
     },
     {
         "src": "../assets/tisa/photos/tisa-11-3948.jpg",
@@ -125,7 +132,8 @@
     },
     {
         "src": "../assets/tisa/photos/tisa-13-4570.jpg",
-        "alt": "Students using virtual reality racing simulators"
+        "alt": "Students using virtual reality racing simulators",
+        "offset": 50
     },
     {
         "src": "../assets/tisa/photos/tisa-14-7914.jpg",
@@ -148,11 +156,47 @@
   let index = 0;
   let timer = null;
   let paused = reducedMotion.matches;
+  // Offsets refer to the crop window at an 850 × 425 reference frame.
+  // Compute the percentage from the original image dimensions so it scales
+  // proportionally on smaller screens and never exposes empty space.
+  function cropFor(slide, width, height) {
+    const baseline = slide.position ? parseFloat(slide.position.split(' ')[1]) / 100 : 0.5;
+    const requested = slide.offset || 0;
+    const available = Math.max(0, 850 * height / width - 425);
+    const initial = available * baseline;
+    const target = Math.max(0, Math.min(available, initial + requested));
+    return { requested, achieved: target - initial, position: available ? target / available * 100 : baseline * 100 };
+  }
+  function applyCrop() {
+    if (!photo.complete || !photo.naturalWidth || photo.currentSrc !== new URL(slides[index].src, document.baseURI).href) return;
+    const slide = slides[index];
+    if (!slide.offset) return;
+    const crop = cropFor(slide, photo.naturalWidth, photo.naturalHeight);
+    photo.style.objectPosition = 'center ' + crop.position + '%';
+  }
+  photo.addEventListener('load', applyCrop);
+  // Optional developer-console report; no visible controls or layout changes.
+  window.tisaCropReport = async () => {
+    const rows = await Promise.all(slides.map(async (slide, i) => {
+      const image = new Image();
+      image.src = slide.src;
+      try {
+        await image.decode();
+        const crop = cropFor(slide, image.naturalWidth, image.naturalHeight);
+        return {photo: i + 1, requested: crop.requested, achieved: Math.round(crop.achieved * 100) / 100, limited: Math.abs(crop.requested - crop.achieved) > 0.01};
+      } catch {
+        return {photo: i + 1, requested: slide.offset || 0, achieved: 'Image unavailable', limited: 'Unknown'};
+      }
+    }));
+    console.table(rows);
+    return rows;
+  };
   function display(next) {
     index = (next + slides.length) % slides.length;
     photo.src = slides[index].src;
     photo.alt = slides[index].alt;
     photo.style.objectPosition = slides[index].position || 'center';
+    applyCrop();
     status.textContent = 'Photograph ' + (index + 1) + ' of ' + slides.length;
   }
   function stop() {
